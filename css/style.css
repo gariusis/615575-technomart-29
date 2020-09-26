@@ -1,0 +1,682 @@
+/*
+  Названия системных шрифтов по ТЗ:
+
+  font-family: 'Cuprum', sans-serif;
+  font-family: 'PT Sans', sans-serif;
+*/
+/* ---------------------- */
+/* Общие настройки start */
+/* Например, одинаковый фон кнопок\ссылок и так далее */
+:root {
+  --basic-black-color: #000000;
+  --basic-white-color: #ffffff;
+
+  --dark-blue-bg-color: #293449;
+
+  --white-bg-rgba: 255, 255, 255;
+  --light-grey-color-rgba: 197, 197, 197;
+  --very-light-grey-rgba: 169, 169, 169;
+
+  --red-color: #ee3643;
+  --sand-color: #FFD180;
+  --wet-asphalt-color: #32425c;
+  --turquoise-color: #3BBCE3;
+  --green-color: #63A63E;
+
+  --dark-sand-color: #FFBF47;
+  --dark-red-color: #BA2732;
+  --dark-wet-asphalt-color: #32425C;
+
+  --darker-blue-color: #161D29;
+  --darker-red-color: #CA2C37;
+
+  --very-darker-red-color: #BA2732;
+
+  --light-grey-color: #A9A9A9;
+  --light-white-color: #F1F5F7;
+  --light-white-color-footer: #F3F7F9;
+  --light-volet-color: #DC91D8;
+  --light-green-color: #8ED78F;
+  --light-sand-color: #FFC047;
+  --light-beige: #F9F5F0;
+  --light-green-color: #5FBB2D;
+
+  --lighter-grey-color: rgba(var(--white-bg), 0.25);
+  --lighter-white-color: rgba(var(--white-bg), 0.5);
+
+  --very-light-grey-color: #C5C5C5;
+  --very-lighter-grey-color: #F1F5F7;
+
+  --very-very-light-grey-color: #EAEAEA;
+}
+
+.container-wrapper {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: var(--basic-white-color);
+  background-color: var(--basic-white-color);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.logo-master {
+  background-color: var(--red-color);
+}
+
+.logo-master:hover {
+  cursor: pointer;
+}
+
+.logo-master:active {
+  background-color: var(--dark-red-color);
+}
+
+.btn-nav {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--basic-white-color);
+
+  background-color: var(--red-color);
+}
+
+.btn-nav:hover {
+  cursor: pointer;
+
+  background-color: var(--darker-red-color);
+}
+
+.btn-nav:active {
+  cursor: pointer;
+
+  background-color: var(--very-darker-red-color);
+}
+
+.popular-header {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--wet-asphalt-color);
+}
+
+.navigation-item-link {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+
+.popular-inner {
+  background-color: var( --light-beige);
+}
+
+.info-card-new-text {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  color: var(--basic-white-color);
+
+  background-color: var(--red-color);
+}
+/* Общие настройки end */
+/* ---------------------- */
+/*
+  Шапка сайта start
+*/
+
+.master-wrapper-head {
+  background-color: var(--dark-blue-bg-color);
+}
+
+.bookmark-inner:hover {
+  cursor: pointer;
+}
+
+.bookmarks-number:active {
+  background-color: var(--darker-blue-color);
+  color: var(--lighter-white-color);
+}
+
+.basket-inner:hover {
+  cursor: pointer;
+}
+
+.basket:active {
+  color: var(--lighter-white-color);
+}
+
+.general-style-header {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--basic-white-color);
+}
+
+.order-registration {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--basic-white-color);
+
+  background-color: var(--green-color);
+}
+
+.order-registration:hover {
+  cursor: pointer;
+
+  background-color: var(--light-green-color);
+}
+
+.order-registration:active {
+  color: var(--lighter-white-color);
+
+  background-color: var(--green-color);
+}
+
+/*
+  Шапка сайта end
+*/
+/* ---------------------- */
+/*
+  Блок с навигацией и информацией для пользователя start
+*/
+
+.master-wrapper-info-and-nav {
+  background-color: var(--very-lighter-grey-color);
+}
+
+/* Информация для пользователя end */
+.brief-description {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--red-color);
+}
+
+.contacts-of-technomart:hover {
+  cursor: pointer;
+}
+
+.telephone-of-tecnomart {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--red-color);
+}
+
+.address-of-technomart {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  color: var(--wet-asphalt-color);
+}
+
+.button-user {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  color: var(--basic-black-color);
+
+  background-color: var( --light-white-bg);
+}
+
+.button-user:hover {
+  cursor: pointer;
+
+  color: var(--red-color);
+}
+
+.button-user:active {
+  color: var(--very-light-grey-color);
+}
+/* Информация для пользователя end */
+
+/* Навигация start */
+.master-nav-inner {
+  background-color: var(--wet-asphalt-color);
+}
+
+.nav-items {
+  list-style: none;
+}
+
+.navigation-item:hover {
+  cursor: pointer;
+  background-color: var(--dark-blue-bg-color);
+}
+
+.navigation-item:active  {
+  background-color: var(--dark-blue-bg-color);
+  color: var(--basic-white-color);
+}
+
+.navigation-item-link-main {
+  text-align: center;
+  color: var(--basic-white-color);
+}
+
+.navigation-item-link-main:active {
+  color: var(--basic-white-color);
+  opacity: 0.5;
+}
+/* Навигация end */
+
+/*
+  Блок с навигацией и информацией для пользователя end
+*/
+/* ---------------------- */
+/*
+  Блок с товарами и акциями start
+*/
+
+.info-card-header-general-style {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--basic-white-color);
+}
+
+.info-card-link-general-style {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--basic-white-color);
+
+  background-color: rgba(var(--white-bg-rgba), 0.5);
+}
+
+.info-card-link-general-style:hover {
+  background-color: rgba(var(--light-grey-color-rgba), 0.3);
+}
+
+.info-card-link-general-style:active {
+  background-color: rgba(var(--very-light-grey-rgba), 0.3);
+}
+
+.info-card-link-bg:hover {
+  cursor: pointer;
+}
+
+/* Материалы start */
+.info-card-materials {
+  background-color: var(--dark-sand-color);
+}
+/* Материалы end */
+
+/* Инструмент start */
+.info-card-tools {
+  background-color: var(--turquoise-color);
+}
+/* Инструмент end */
+
+/* Техника start */
+.info-card-technics {
+  background-color: var(--light-volet-color);
+}
+/* Техника end */
+
+/* Слайдер start */
+/* Слайд 1 start */
+.slide-inner-add {
+  background-color: var(--lighter-grey-color);
+}
+.slide-header {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  color: var(--basic-white-color);
+}
+
+.slide-add-header {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 36px;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--basic-white-color);
+}
+/* Слайд 1 end */
+/* Слайдер end */
+
+/* Скидки 50% start */
+.info-card-discounts {
+  background-color: var(--light-green-color);
+}
+/* Скидки 50% end */
+
+/* Доставка start */
+.info-card-delivery {
+  background-color: var(--light-sand-color);
+}
+/* Доставка end */
+
+/*
+  Блок с товарами и акциями end
+*/
+/* ---------------------- */
+/*
+   Блок с популяярными товарами start
+*/
+
+.item-header {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  color: var(--basic-black-color);
+}
+
+.item-price {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  color: var(--light-grey-color);
+}
+
+.product-button {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  color: var(--basic-white-color);
+
+  background-color: var(--red-color);
+}
+
+.product-button:hover {
+  cursor: pointer;
+
+  background-color: var(--darker-red-color);
+}
+
+.product-button:active {
+  cursor: pointer;
+
+  background-color: var(--very-darker-red-color);
+}
+/*
+   Блок с популяярными товарами end
+*/
+/* ---------------------- */
+/*
+  Блок с популяярными производителями start
+*/
+
+.manufacturer-items {
+  list-style: none;
+}
+
+.manufacturer-link {
+  border: 1px solid var(--very-very-light-grey-color);
+}
+
+.manufacturer-link:hover {
+  border: 1px solid var(--very-very-light-grey-color);
+
+  box-shadow: 0 0 10px var(--light-grey-color);
+}
+
+.manufacturer-link:active {
+  box-shadow: 0 0 10px var(--very-light-grey-color);
+}
+
+/*
+   Блок с популяярными производителями end
+*/
+/* ---------------------- */
+/*
+  Блок с сервисами start
+*/
+
+.services-wrapper {
+  background-color: var(--light-white-color);
+}
+
+.services-header {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  color: var(--basic-black-color);
+}
+
+.services-info {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--basic-black-color);
+}
+/* Слайдер start */
+/* Навигация по слайдеру start */
+.name-of-services {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--basic-black-color);
+
+  background-color: var(--wet-asphalt-color);
+}
+
+.name-of-services-active:hover,
+.name-of-services:hover {
+  color: var(--basic-white-color);
+
+  background-color: var(--dark-blue-bg-color);
+  cursor: pointer;
+}
+
+.name-of-services-active {
+  color: var(--dark-wet-asphalt-color);
+
+  background-color: var(--basic-white-color);
+}
+/* Навигация по слайдеру end */
+/* Слайд 1 start */
+.services-slide-header {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  color: var(--wet-asphalt-color);
+}
+
+.services-slide-info-descr {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--basic-black-color);
+}
+/* Слайд 1 end */
+/* Слайдер end */
+
+/*
+  Блок с сервисами end
+*/
+/* ---------------------- */
+/*
+  Блок с информацией о транспортных компаниях и контактами Техномарт start
+*/
+
+.tc-and-contacts-header-general {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  color: var(--basic-black-color);
+}
+
+.partners-items {
+  list-style: none;
+}
+
+.tc-and-contacts-info-general {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--basic-black-color);
+}
+
+.item-partner-header {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--basic-black-color);
+}
+
+/*
+  Блок с информацией о транспортных компаниях и контактами Техномарт end
+*/
+/* ---------------------- */
+/*
+  Подвал сайта start
+*/
+
+/* Первый блок подвала сайта start */
+.one-block-wrapper {
+  background-color: var(--wet-asphalt-color);
+}
+
+.two-block-wrapper {
+  background-color: var(--dark-blue-bg-color);
+}
+
+.navigation-item-link-footer-main-one {
+  color: var(--light-white-color);
+}
+
+.navigation-item-link-footer-main-one:hover,
+.navigation-item-link-footer-secondary-one:hover {
+  text-decoration: underline;
+}
+
+.navigation-item-link-footer-main-one:active,
+.navigation-item-link-footer-secondary-one:active {
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+.navigation-item-footer-main-one:hover,
+.item-footer-secondary-one:hover {
+  background-color: transparent;
+}
+
+.navigation-item-link-footer-secondary-one {
+  color: var(--sand-color);
+}
+
+.address-telephone-footer-secondary-one {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--light-white-color-footer);
+}
+/* Первый блок подвала сайта end */
+.copyright-technomart,
+.copyright-security,
+.feedback,
+.developed {
+  color: var(--basic-white-color);
+}
+
+.two-block-basic {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.developer-mail-link,
+.developer-link {
+  color: var(--sand-color);
+}
+
+.developer-mail-link:hover,
+.developer-link:hover {
+  border-bottom: 1px solid var(--sand-color);
+}
+
+.developer-mail-link:active,
+.developer-link:active {
+  border-bottom: none;
+  color: var(--red-color);
+}
+/* Второй блок подвала сайта start */
+
+/* Второй блок подвала сайта end */
+/*
+  Подвал сайта end
+*/
