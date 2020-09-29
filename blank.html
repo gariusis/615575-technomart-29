@@ -4,184 +4,239 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-
-  <header>
-    <h2>
+<body class="container-wrapper">
+  <!-- Шапка сайта start -->
+  <header class="master-wrapper-head">
+    <h2 class="visually-hidden">
       Шапка сайта
     </h2>
-    <a href="index.html">
-      <img src="https://via.placeholder.com/150x100" width="150" height="100" alt="Логотип магазина Техномарт">
-    </a>
-    <span>
-      <!--Здесь будет форма поиска -->
-    </span>
-    <div>
-      <img src="https://via.placeholder.com/150x100" width="150" height="100" alt="Иконка закладки">
-      <p>
-        Закладки:
-      </p>
-      <p>
-        0
-      </p>
-    </div>
-    <div>
-      <img src="https://via.placeholder.com/150x100" width="150" height="100" alt="Иконка корзины">
-      <p>
-        Корзина:
-      </p>
-      <p>
-        0
-      </p>
-    </div>
-    <button type="button">
-      Оформить заказ
-    </button>
-  </header>
-
-  <div>
-    <section>
-      <h2>
-        Слоган, контакты и кнопки меню пользователя, выполнившего вход в Личный кабинет
+    <section class="head-inner">
+      <h2 class="visually-hidden">
+        Шапка сайта
       </h2>
-      <p>
+      <a class="logo-master logo-master-header" tabindex="0">
+        <img class="logo-master-t-one logo-master-header-t-one" src="https://via.placeholder.com/150x100" width="150"
+          height="100" alt="Логотип магазина Техномарт Т">
+        <img class="logo-master-e logo-master-header-e" src="https://via.placeholder.com/150x100" width="150"
+          height="100" alt="Логотип магазина Техномарт Е">
+        <img class="logo-master-ch logo-master-header-ch" src="https://via.placeholder.com/150x100" width="150"
+          height="100" alt="Логотип магазина Техномарт Х">
+        <img class="logo-master-n logo-master-header-n" src="https://via.placeholder.com/150x100" width="150"
+          height="100" alt="Логотип магазина Техномарт Н">
+        <img class="logo-master-o logo-master-header-o" src="https://via.placeholder.com/150x100" width="150"
+          height="100" alt="Логотип магазина Техномарт О">
+        <img class="logo-master-m logo-master-header-m" src="https://via.placeholder.com/150x100" width="150"
+          height="100" alt="Логотип магазина Техномарт М">
+        <img class="logo-master-a logo-master-header-a" src="https://via.placeholder.com/150x100" width="150"
+          height="100" alt="Логотип магазина Техномарт А">
+        <img class="logo-master-r logo-master-header-r" src="https://via.placeholder.com/150x100" width="150"
+          height="100" alt="Логотип магазина Техномарт Р">
+        <img class="logo-master-t-two logo-master-header-t-two" src="https://via.placeholder.com/150x100" width="150"
+          height="100" alt="Логотип магазина Техномарт Т">
+      </a>
+      <span class="some-form" tabindex="0">
+        <!-- Здесь будет форма поиска -->
+      </span>
+      <div class="bookmark-inner bookmarks-number" tabindex="0">
+        <img class="bookmark-ico" src="https://via.placeholder.com/150x100" width="150" height="100"
+          alt="Иконка закладки">
+        <p class="bookmarks bookmarks-number general-style-header">
+          Закладки: 0
+        </p>
+      </div>
+      <div class="basket-innerbasket-add-background-color" tabindex="0">
+        <img class="basket-ico" src="https://via.placeholder.com/150x100" width="150" height="100" alt="Иконка корзины">
+        <p class="basket general-style-header">
+          Корзина: 10
+        </p>
+      </div>
+      <button type="button" class="order-registration">
+        Оформить заказ
+      </button>
+    </section>
+  </header>
+  <!-- Шапка сайта end -->
+
+  <!-- Блок с навигацией и информацией для пользователя start -->
+  <div class="master-wrapper-info-and-nav">
+    <!-- Информация для пользователя start -->
+    <section class="info-for-user-inner">
+      <h2 class="visually-hidden">
+        Слоган, контакты и кнопки Вход и Регистрация
+      </h2>
+      <p class="brief-description">
         Интернет-магазин<br>
         строительных материалов<br>
         и инструментов для ремонта
       </p>
-      <article>
-        <h2>
+      <article class="contacts-inner">
+        <h2 class="visually-hidden">
           Контакты
         </h2>
-        <address>
-          <img src="https://via.placeholder.com/150x100" width="150" height="100" alt="Иконка трубки телефона">
-          <a href="tel:78125550555">+7 (812) 555-05-55</a>
-          <p>
+        <address class="contacts-of-technomart">
+          <img class="phone-ico" src="https://via.placeholder.com/150x100" width="150" height="100"
+            alt="Иконка трубки телефона">
+          <a class="telephone-of-tecnomart" href="tel:78125550555">+7 (812) 555-05-55</a>
+          <p class="address-of-technomart">
             г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
           </p>
         </address>
-        <div>
-          <div>
-            <a href="blank.html">
-              <img src="https://via.placeholder.com/150x100" width="150" height="100" alt="Иконка кнопки пользователя">
+        <section class="login-and-register-inner">
+          <h2 class="visually-hidden">
+            Авторизованный пользователь
+          </h2>
+          <div class="logined-user">
+            <a class="logined-user-link">
+              <img class="logined-user-ico" src="https://via.placeholder.com/150x100" width="150" height="100"
+                alt="Иконка кнопки пользователя">
               Равшан Джамшутович
             </a>
-            <a href="index.html">
-              <img src="https://via.placeholder.com/150x100" width="150" height="100" alt="Иконка кнопки Выход">
+            <a class="logined-user-button" href="index.html">
+              <img class="logined-user-exit-ico" src="https://via.placeholder.com/150x100" width="150" height="100"
+                alt="Иконка кнопки Выход">
             </a>
           </div>
-          <ul>
-            <li>
-              <a href="orders.html">
+          <ul class="navigation-logined-user">
+            <li class="navigation-logined-user-item">
+              <a class="logined-user-orders" href="orders.html">
                 Мои заказы
               </a>
             </li>
-            <li>
-              <span>
-                U+2022
-              </span>
-            </li>
-            <li>
-              <a href="account.html">
+            <li class="navigation-logined-user-item logined-user-item-marker"></li>
+            <li class="navigation-logined-user-item">
+              <a class="logined-user-account" href="account.html">
                 Личный кабинет
               </a>
             </li>
           </ul>
-        </div>
+        </section>
       </article>
     </section>
-
-    <nav>
-      <h2>
-        Навигация
-      </h2>
-      <ul>
-        <li>
-          <a href="index.html">
-            Главная
-          </a>
-        </li>
-        <li>
-          <a href="catalog.html">
-            Компания
-          </a>
-        </li>
-        <li>
-          <a href="catalog.html">
-            Каталог
-          </a>
-        </li>
-        <li>
-          <a href="news.html">
-            Новости
-          </a>
-        </li>
-        <li>
-          <a href="special.html">
-            Спецпредложения
-          </a>
-        </li>
-        <li>
-          <a href="delivery.html">
-            Доставка
-          </a>
-        </li>
-        <li>
-          <a href="blank.html">
-            Контакты
-          </a>
-        </li>
-      </ul>
-    </nav>
   </div>
+  <!-- Информация для пользователя end -->
 
-  <main>
+  <!-- Навигация start -->
+  <nav class="master-nav-inner">
+    <h2 class="visually-hidden">
+      Навигация
+    </h2>
+    <ul class="nav-items">
+      <li class="navigation-item">
+        <a class="navigation-item-link navigation-item-link-main" href="index.html">
+          Главная
+        </a>
+      </li>
+      <li class="navigation-item">
+        <a class="navigation-item-link navigation-item-link-main" href="company.html">
+          Компания
+        </a>
+      </li>
+      <li class="navigation-item">
+        <a class="navigation-item-link navigation-item-link-main" href="catalog.html">
+          Каталог
+        </a>
+      </li>
+      <li class="navigation-item">
+        <a class="navigation-item-link navigation-item-link-main" href="news.html">
+          Новости
+        </a>
+      </li>
+      <li class="navigation-item">
+        <a class="navigation-item-link navigation-item-link-main" href="special.html">
+          Спецпредложения
+        </a>
+      </li>
+      <li class="navigation-item">
+        <a class="navigation-item-link navigation-item-link-main" href="delivery.html">
+          Доставка
+        </a>
+      </li>
+      <li class="navigation-item cursor-default">
+        <a class="navigation-item-link navigation-item-link-main cursor-default">
+          Контакты
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- Навигация end -->
+  <!-- Блок с навигацией и информацией для пользователя end -->
 
-    <h1>
-      Страница с контактами магазина Техномарт
-    </h1>
-
+  <main class="content">
+    <!-- Страница с контактами магазина Техномарт start -->
+      <h1 class="content-empty-page">
+        Страница с контактами магазина Техномарт
+      </h1>
+    <!-- Страница с контактами магазина Техномарт end -->
   </main>
 
-  <footer>
-    <h2>
+  <!-- Подвал сайта start -->
+  <footer class="info-tech">
+    <h2 class="visually-hidden">
       Контакты и навигация в подвале сайта магазина Техномарт
     </h2>
-    <div>
-      <div>
-        <section>
-          <h2>
+    <!-- Первый блок подвала сайта start -->
+    <div class="one-block-wrapper">
+      <div class="one-block-nav-master">
+        <section class="nav-master-footer">
+          <h2 class="visually-hidden">
             Контакты
           </h2>
-          <img src="https://via.placeholder.com/150x100" width="150" height="100" alt="Логотип магазина Техномарт">
-          <nav>
-            <ul>
-              <li>
-                <a href="company.html">
+          <a href="index.html" class="logo-master logo-master-footer" tabindex="0">
+            <img class="logo-master-t-one logo-master-header-t-one" src="https://via.placeholder.com/150x100"
+              width="150" height="100" alt="Логотип магазина Техномарт Т">
+            <img class="logo-master-e logo-master-header-e" src="https://via.placeholder.com/150x100" width="150"
+              height="100" alt="Логотип магазина Техномарт Е">
+            <img class="logo-master-ch logo-master-header-ch" src="https://via.placeholder.com/150x100" width="150"
+              height="100" alt="Логотип магазина Техномарт Х">
+            <img class="logo-master-n logo-master-header-n" src="https://via.placeholder.com/150x100" width="150"
+              height="100" alt="Логотип магазина Техномарт Н">
+            <img class="logo-master-o logo-master-header-o" src="https://via.placeholder.com/150x100" width="150"
+              height="100" alt="Логотип магазина Техномарт О">
+            <img class="logo-master-m logo-master-header-m" src="https://via.placeholder.com/150x100" width="150"
+              height="100" alt="Логотип магазина Техномарт М">
+            <img class="logo-master-a logo-master-header-a" src="https://via.placeholder.com/150x100" width="150"
+              height="100" alt="Логотип магазина Техномарт А">
+            <img class="logo-master-r logo-master-header-r" src="https://via.placeholder.com/150x100" width="150"
+              height="100" alt="Логотип магазина Техномарт Р">
+            <img class="logo-master-t-two logo-master-header-t-two" src="https://via.placeholder.com/150x100"
+              width="150" height="100" alt="Логотип магазина Техномарт Т">
+          </a>
+          <nav class="nav-items-footer-main-one">
+            <ul class="nav-items nav-items-footer-one">
+              <li class="navigation-item navigation-item-footer-main-one">
+                <a class="navigation-item-link navigation-item-link-footer-main-one" href="index.html">
+                  Главная
+                </a>
+              </li>
+              <li class="navigation-item navigation-item-footer-main-one">
+                <a class="navigation-item-link navigation-item-link-footer-main-one" href="company.html">
                   Компания
                 </a>
               </li>
-              <li>
-                <a href="news.html">
+              <li class="navigation-item navigation-item-footer-main-one">
+                <a class="navigation-item-link navigation-item-link-footer-main-one" href="news.html">
                   Новости
                 </a>
               </li>
-              <li>
-                <a href="catalog.html">
+              <li class="navigation-item navigation-item-footer-main-one">
+                <a class="navigation-item-link navigation-item-link-footer-main-one" href="catalog.html">
                   Каталог
                 </a>
               </li>
-              <li>
-                <a href="delivery.html">
+              <li class="navigation-item navigation-item-footer-main-one">
+                <a class="navigation-item-link navigation-item-link-footer-main-one" href="delivery.html">
                   Доставка
                 </a>
               </li>
-              <li>
-                <a href="blank.html">
+              <li class="navigation-item navigation-item-footer-main-one">
+                <a class="navigation-item-link navigation-item-link-footer-main-one cursor-default">
                   Контакты
                 </a>
               </li>
@@ -191,25 +246,38 @@
       </div>
 
       <div>
-        <nav>
-          <ul>
-            <li>
-              <a href="materials.html">
+        <article class="contacts-inner-footer-secondary-one">
+          <h2 class="visually-hidden">
+            Контакты
+          </h2>
+          <address class="contacts-of-technomart-footer-secondary-one">
+            <p class="address-of-technomart-footer-secondary-one address-telephone-footer-secondary-one">
+              г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+            </p>
+            <a class="telephone-of-tecnomart-footer-secondary-one address-telephone-footer-secondary-one"
+              href="tel:78125550555">+7 (812) 555-05-55</a>
+          </address>
+        </article>
+
+        <nav class="nav-items-footer-secondary-one">
+          <ul class="nav-items">
+            <li class="navigation-item item-footer-secondary-one">
+              <a class="navigation-item-link navigation-item-link-footer-secondary-one" href="materials.html">
                 Материалы
               </a>
             </li>
-            <li>
-              <a href="technics.html">
+            <li class="navigation-item item-footer-secondary-one">
+              <a class="navigation-item-link navigation-item-link-footer-secondary-one" href="technics.html">
                 Техника
               </a>
             </li>
-            <li>
-              <a href="tool.html">
+            <li class="navigation-item item-footer-secondary-one">
+              <a class="navigation-item-link navigation-item-link-footer-secondary-one" href="tool.html">
                 Инструмент
               </a>
             </li>
-            <li>
-              <a href="special.html">
+            <li class="navigation-item item-footer-secondary-one">
+              <a class="navigation-item-link navigation-item-link-footer-secondary-one" href="special.html">
                 Спецпредложения
               </a>
             </li>
@@ -217,67 +285,77 @@
         </nav>
       </div>
     </div>
-
-    <div>
-      <div>
-        <section>
-          <h2>
+    <!-- Первый блок подвала сайта end -->
+    <!-- - -->
+    <!-- Второй блок подвала сайта start -->
+    <div class="two-block-wrapper">
+      <div class="two-block-inner">
+        <section class="copyright">
+          <h2 class="visually-hidden">
             Авторские права
           </h2>
-          <p>
+          <p class="copyright-technomart two-block-basic">
             © 2010–2019 Компания «Техномарт»
           </p>
-          <p>
+          <p class="copyright-security two-block-basic">
             Все права защищены
           </p>
         </section>
 
-        <section>
-          <h2>
+        <section class="social-contacts">
+          <h2 class="visually-hidden">
             Контакты в социальных сетях
           </h2>
-          <ul>
-            <li>
-              <a href="#">
+          <ul class="social-contacts-items">
+            <li class="item-social-contact">
+              <a class="social-contact-link social-contact-vk" href="#">
                 Вконтакте
+                <img class="social-ico ico-vk map-pic" src="https://via.placeholder.com/150x100" width="150"
+                  height="100" alt="иконка Вконтакте">
               </a>
             </li>
-            <li>
-              <a href="#">
+            <li class="item-social-contact">
+              <a class="social-contact-link social-contact-fb" href="#">
                 Фейсбук
+                <img class="social-ico ico-fb map-pic" src="https://via.placeholder.com/150x100" width="150"
+                  height="100" alt="иконка Фейсбук">
               </a>
             </li>
-            <li>
-              <a href="#">
+            <li class="item-social-contact">
+              <a class="social-contact-link social-contact-inst" href="#">
                 Инстаграм
+                <img class="social-ico ico-inst map-pic" src="https://via.placeholder.com/150x100" width="150"
+                  height="100" alt="иконка Инстаграм">
               </a>
             </li>
           </ul>
         </section>
 
-        <section>
-          <h2>
+        <section class="contacts-mail-site">
+          <h2 class="visually-hidden">
             Обратная связь с компанией-разработчиком
           </h2>
-          <p>
+          <p class="feedback two-block-basic">
             Обратная связь:
           </p>
-          <address>
-            <a href="mailto:mail@htmlacademy.ru">
+          <address class="developer-mail">
+            <a class="developer-mail-link two-block-basic" href="mailto:mail@htmlacademy.ru">
               mail@htmlacademy.ru
             </a>
           </address>
-          <p>
+          <p class="developed two-block-basic">
             Разработано:
-            <a href="https://htmlacademy.ru/intensive/htmlcss">
+            <a class="developer-link two-block-basic" href="https://htmlacademy.ru/intensive/htmlcss">
               htmlacademy.ru
             </a>
           </p>
         </section>
       </div>
     </div>
+    <!-- Второй блок подвала сайта end -->
 
   </footer>
+  <!-- Подвал сайта end -->
 
   <script src="js/script.js"></script>
 

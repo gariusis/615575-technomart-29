@@ -26,6 +26,7 @@
   --dark-sand-color: #FFBF47;
   --dark-red-color: #BA2732;
   --dark-wet-asphalt-color: #32425C;
+  --dark-green-color: #518534;
 
   --darker-blue-color: #161D29;
   --darker-red-color: #CA2C37;
@@ -41,13 +42,37 @@
   --light-beige: #F9F5F0;
   --light-green-color: #5FBB2D;
 
-  --lighter-grey-color: rgba(var(--white-bg), 0.25);
-  --lighter-white-color: rgba(var(--white-bg), 0.5);
+  --lighter-grey-color: rgba(var(--light-grey-color-rgba), 0.25);
+  --lighter-white-color: rgba(var(--white-bg-rgba), 0.5);
+
+  --very-light-white-color: rgba(var(--white-bg-rgba), 0.5);
 
   --very-light-grey-color: #C5C5C5;
   --very-lighter-grey-color: #F1F5F7;
 
   --very-very-light-grey-color: #EAEAEA;
+  --very-very-lighter-grey-color: #F2F6F8;
+
+  --very-very-very-light-grey-color: #E5E5E5;
+}
+
+.cursor-default:hover {
+  cursor: default;
+}
+
+.cursor-default {
+  cursor: default;
+}
+
+.content-empty-page {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--basic-black-color);
 }
 
 .container-wrapper {
@@ -143,6 +168,11 @@ img {
 
   background-color: var(--red-color);
 }
+
+.info-card-new-text-add {
+  color: transparent;
+  background-color: transparent;
+}
 /* Общие настройки end */
 /* ---------------------- */
 /*
@@ -168,6 +198,10 @@ img {
 
 .basket:active {
   color: var(--lighter-white-color);
+}
+
+.basket-add-background-color {
+  background-color: var(--red-color);
 }
 
 .general-style-header {
@@ -245,6 +279,72 @@ img {
   font-style: normal;
   text-align: center;
   color: var(--wet-asphalt-color);
+}
+
+.logined-user {
+  background-color: var(--very-light-white-color);
+}
+
+.logined-user-link {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--basic-black-color);
+}
+
+.logined-user-link:hover {
+  color: var(--basic-black-color);
+}
+
+.logined-user-link:active {
+  color: var(--very-light-grey-color);
+}
+
+.logined-user-button {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  color: var(--basic-black-color);
+}
+
+.logined-user-orders,
+.logined-user-account {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  color: var(--wet-asphalt-color);
+}
+
+.logined-user-orders:hover,
+.logined-user-account:hover,
+.logined-user-item-marker:hover {
+  color: var(--red-color);
+}
+
+.logined-user-orders:active,
+.logined-user-account:active,
+.logined-user-item-marker:active {
+  color: var(--very-light-grey-color);
+}
+
+.navigation-logined-user {
+  list-style: none;
+}
+
+.logined-user-item-marker {
+  display: block;
+  Width: 6px;
+  Height: 7px;
+  background: linear-gradient(0deg, var(--dark-wet-asphalt-color), var(--dark-wet-asphalt-color)), var(--basic-black-color);
+  border-radius: 50%;
 }
 
 .button-user {
@@ -449,6 +549,54 @@ img {
 
   background-color: var(--very-darker-red-color);
 }
+
+.product-button-hover {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--basic-white-color);
+
+  background-color: var(--green-color);
+}
+
+.product-button-hover:hover {
+  background-color: var(--light-green-color);
+
+  cursor: pointer;
+}
+
+.product-button-hover:active {
+  background-color: var(--dark-green-color);
+}
+
+.product-button-boomarks {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--wet-asphalt-color);
+
+  background-color: transparent;
+
+  border: 3px solid var(--green-color);
+}
+
+.product-button-boomarks:hover {
+  cursor: pointer;
+
+  border: 3px solid var(--wet-asphalt-color);
+}
+
+.product-button-boomarks:active {
+  opacity: 0.5;
+}
 /*
    Блок с популяярными товарами end
 */
@@ -644,6 +792,8 @@ img {
   color: var(--light-white-color-footer);
 }
 /* Первый блок подвала сайта end */
+
+/* Второй блок подвала сайта start */
 .copyright-technomart,
 .copyright-security,
 .feedback,
@@ -657,6 +807,10 @@ img {
   line-height: 18px;
   font-weight: 400;
   font-style: normal;
+}
+
+.social-contacts-items {
+  list-style: none;
 }
 
 .developer-mail-link,
@@ -674,9 +828,93 @@ img {
   border-bottom: none;
   color: var(--red-color);
 }
-/* Второй блок подвала сайта start */
-
 /* Второй блок подвала сайта end */
 /*
   Подвал сайта end
+*/
+/* ---------------------- */
+/*
+  Каталог сайта start
+*/
+
+.item-bread-crumb {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--basic-black-color);
+}
+
+.perforators-header {
+  background-color: var(--very-very-lighter-grey-color);
+}
+
+.perforators-header h2 {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  color: var(--wet-asphalt-color);
+}
+
+.pagin-items {
+  background-color: var(--basic-white-color);
+  border: 1px solid var(--very-very-very-light-grey-color);
+}
+
+.pagin-items:active {
+  border: 1px solid var(--red-color);
+}
+
+.pagin-items:hover {
+  cursor: pointer;
+}
+
+.pagin-item-link {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  color: var(--basic-black-color);
+}
+
+.pagin-item-link-active {
+  background-color: var(--red-color);
+  color: var(--basic-white-color);
+}
+
+.pagin-item-link-active:hover {
+  cursor: default;
+}
+
+.about-perforators {
+  background-color: var(--light-white-color);
+}
+
+.about-perforators-header {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  color: var(--basic-black-color);
+}
+
+.about-perforators-artcle {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--basic-black-color);
+}
+
+/*
+  Каталог сайта end
 */
