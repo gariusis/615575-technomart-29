@@ -173,6 +173,14 @@ img {
   color: transparent;
   background-color: transparent;
 }
+
+.new-ico {
+  background-color: var(--basic-black-color);
+}
+
+.perforator-pic {
+  background-color: var(--basic-black-color);
+}
 /* Общие настройки end */
 /* ---------------------- */
 /*
@@ -462,6 +470,10 @@ img {
 
 /* Слайдер start */
 /* Слайд 1 start */
+.slider-info-blocks {
+  background-color: var(--basic-black-color);
+}
+
 .slide-inner-add {
   background-color: var(--lighter-grey-color);
 }
@@ -621,6 +633,10 @@ img {
 
 .manufacturer-link:active {
   box-shadow: 0 0 10px var(--very-light-grey-color);
+}
+
+.manufacturer-pic {
+  background-color: var(--basic-black-color);
 }
 
 /*
