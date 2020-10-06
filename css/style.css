@@ -56,6 +56,18 @@
   --very-very-very-light-grey-color: #E5E5E5;
 }
 
+.container-wrapper {
+  min-height: 100%;
+
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
+.visually-hidden {
+  display: none;
+}
+
 .cursor-default:hover {
   cursor: default;
 }
@@ -64,7 +76,7 @@
   cursor: default;
 }
 
-.content-empty-page {
+.content-empty-page { /* класс для "пустых" страниц, которые для наполнения сайта */
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   line-height: 30px;
@@ -73,6 +85,10 @@
   text-align: center;
   text-transform: uppercase;
   color: var(--basic-black-color);
+}
+
+.page {
+  height: 100%;
 }
 
 .container-wrapper {
@@ -85,8 +101,11 @@
   font-weight: 700;
   color: var(--basic-white-color);
   background-color: var(--basic-white-color);
-  background-position: top center;
-  background-repeat: no-repeat;
+}
+
+.content {
+  outline: 5px solid black; /* временно */
+  outline-offset: -5px; /* временно */
 }
 
 a {
@@ -187,8 +206,34 @@ img {
   Шапка сайта start
 */
 
+.head-inner {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  width: 940px;
+  margin: 0 auto;
+
+  outline: 5px solid black; /* временно */
+  outline-offset: -5px; /* временно */
+}
+
+.head-wrapper-left {
+  outline: 6px solid blue; /* временно */
+  outline-offset: -6px; /* временно */
+}
+
+.head-wrapper-right {
+  outline: 6px solid brown; /* временно */
+  outline-offset: -6px; /* временно */
+}
+
 .master-wrapper-head {
   background-color: var(--dark-blue-bg-color);
+
+  margin-left: auto;
+  margin-right: auto;
+
+  display: grid;
+  width: 100%;
 }
 
 .bookmark-inner:hover {
@@ -257,6 +302,24 @@ img {
 }
 
 /* Информация для пользователя end */
+.info-for-user-inner {
+  display: grid;
+  grid-template-columns:1fr max-content;
+  width: 940px;
+  margin: 0 auto;
+
+  outline: 5px solid red; /* временно */
+  outline-offset: -5px; /* временно */
+}
+
+.contacts-inner {
+  outline: 7px solid green; /* временно */
+  outline-offset: -7px; /* временно */
+
+  display: grid;
+  grid-template-columns: 1fr max-content;
+}
+
 .brief-description {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 16px;
@@ -266,8 +329,18 @@ img {
   color: var(--red-color);
 }
 
+.contacts-of-technomart {
+  outline: 9px solid blue; /* временно */
+  outline-offset: -9px; /* временно */
+}
+
 .contacts-of-technomart:hover {
   cursor: pointer;
+}
+
+.login-and-register-inner {
+  outline: 9px solid brown; /* временно */
+  outline-offset: -9px; /* временно */
 }
 
 .telephone-of-tecnomart {
@@ -381,10 +454,25 @@ img {
 /* Навигация start */
 .master-nav-inner {
   background-color: var(--wet-asphalt-color);
+
+  margin: 0 auto;
+  max-width: 940px;
 }
 
 .nav-items {
   list-style: none;
+
+  width: 940px;
+
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+
+  padding-left: 0;
+
+  outline: 5px solid brown; /* временно */
+  outline-offset: -5px; /* временно */
 }
 
 .navigation-item:hover {
@@ -415,6 +503,16 @@ img {
 /*
   Блок с товарами и акциями start
 */
+
+.products-and-promotions-wrapper {
+  display: grid;
+
+  margin: 0 auto;
+  max-width: 940px;
+
+  outline: 7px solid crimson; /* временно */
+  outline-offset: -7px; /* временно */
+}
 
 .info-card-header-general-style {
   font-family: "Cuprum", Arial, sans-serif;
@@ -495,6 +593,11 @@ img {
   font-style: normal;
   color: var(--basic-white-color);
 }
+
+.slider-perforators {
+  margin: 0;
+  padding: 0;
+}
 /* Слайд 1 end */
 /* Слайдер end */
 
@@ -517,6 +620,32 @@ img {
 /*
    Блок с популяярными товарами start
 */
+
+.popular-product {
+  width: 940px;
+
+  margin-top: -30px;
+  margin-left: auto;
+  margin-right: auto;
+
+  outline: 7px solid violet; /* временно */
+  outline-offset: -7px; /* временно */
+}
+
+.popular-product-wrapper {
+  outline: 9px solid cadetblue; /* временно */
+  outline-offset: -9px; /* временно */
+}
+
+.product-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr max-content;
+
+  padding-left: 0;
+
+  outline: 9px solid rebeccapurple; /* временно */
+  outline-offset: -9px; /* временно */
+}
 
 .item-header {
   font-family: "PT Sans", Arial, sans-serif;
@@ -617,8 +746,32 @@ img {
   Блок с популяярными производителями start
 */
 
+.popular-manufacturer-wrapper {
+  width: 940px;
+
+  margin-top: -30px;
+  margin-left: auto;
+  margin-right: auto;
+
+  outline: 7px solid darkblue; /* временно */
+  outline-offset: -7px; /* временно */
+}
+
+.popular-wrapper {
+  outline: 7px solid wheat; /* временно */
+  outline-offset: -7px; /* временно */
+}
+
 .manufacturer-items {
   list-style: none;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr max-content;
+
+  padding-left: 0;
+
+  outline: 9px solid hotpink; /* временно */
+  outline-offset: -9px; /* временно */
 }
 
 .manufacturer-link {
@@ -648,7 +801,27 @@ img {
 */
 
 .services-wrapper {
+  margin-top: -25px;
+
   background-color: var(--light-white-color);
+}
+
+.services-inner {
+  width: 940px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  outline: 5px solid hotpink; /* временно */
+  outline-offset: -5px; /* временно */
+}
+
+.services-slider-inner {
+  display: grid;
+  grid-template-columns: min-content 1fr 1fr 1fr;
+
+  outline: 7px solid red; /* временно */
+  outline-offset: -7px; /* временно */
 }
 
 .services-header {
@@ -726,6 +899,17 @@ img {
   Блок с информацией о транспортных компаниях и контактами Техномарт start
 */
 
+.tc-and-contacts-container {
+  display: grid;
+
+  grid-template-columns: 1fr max-content;
+
+  width: 940px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .tc-and-contacts-header-general {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
@@ -771,6 +955,36 @@ img {
   background-color: var(--wet-asphalt-color);
 }
 
+.one-block-container {
+  width: 940px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav-master-footer {
+  display: grid;
+  grid-template-columns:  max-content 1fr;
+}
+
+.two-block-nav-master {
+  display: grid;
+  grid-template-columns:  max-content 1fr;
+
+  outline: 7px solid darkgoldenrod; /* временно */
+  outline-offset: -7px; /* временно */
+}
+
+.contacts-inner-footer-secondary-one {
+  outline: 9px solid tomato; /* временно */
+  outline-offset: -9px; /* временно */
+}
+
+.nav-items-footer-one,
+.nav-items-footer-secondary-one {
+  width: auto;
+}
+
 .two-block-wrapper {
   background-color: var(--dark-blue-bg-color);
 }
@@ -810,11 +1024,39 @@ img {
 /* Первый блок подвала сайта end */
 
 /* Второй блок подвала сайта start */
+.two-block-inner {
+  width: 940px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr max-content;
+
+  outline: 7px solid hotpink; /* временно */
+  outline-offset: -7px; /* временно */
+}
+
 .copyright-technomart,
 .copyright-security,
 .feedback,
 .developed {
   color: var(--basic-white-color);
+}
+
+.copyright {
+  outline: 9px solid green; /* временно */
+  outline-offset: -9px; /* временно */
+}
+
+.social-contacts {
+  outline: 9px solid red; /* временно */
+  outline-offset: -9px; /* временно */
+}
+
+.contacts-mail-site {
+  outline: 9px solid brown; /* временно */
+  outline-offset: -9px; /* временно */
 }
 
 .two-block-basic {
