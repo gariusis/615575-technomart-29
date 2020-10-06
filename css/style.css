@@ -87,6 +87,16 @@
   color: var(--basic-black-color);
 }
 
+.content-empty-page-wrapper {
+  width: 940px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  outline: 5px solid green; /* временно */
+  outline-offset: -5px; /* временно */
+}
+
 .page {
   height: 100%;
 }
@@ -647,6 +657,18 @@ img {
   outline-offset: -9px; /* временно */
 }
 
+.product-items-catalog {
+  display: grid;
+  grid-template-columns: 1fr 1fr max-content;
+
+  list-style: none;
+
+  padding-left: 0;
+
+  outline: 9px solid rebeccapurple; /* временно */
+  outline-offset: -9px; /* временно */
+}
+
 .item-header {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 18px;
@@ -908,6 +930,14 @@ img {
 
   margin-left: auto;
   margin-right: auto;
+
+  outline: 5px solid darkgoldenrod; /* временно */
+  outline-offset: -5px; /* временно */
+}
+
+.tc-wrapper {
+  outline: 7px solid red; /* временно */
+  outline-offset: -7px; /* временно */
 }
 
 .tc-and-contacts-header-general {
@@ -942,6 +972,11 @@ img {
   color: var(--basic-black-color);
 }
 
+.contacts-wrapper {
+  outline: 7px solid burlywood; /* временно */
+  outline-offset: -7px; /* временно */
+}
+
 /*
   Блок с информацией о транспортных компаниях и контактами Техномарт end
 */
@@ -973,6 +1008,11 @@ img {
 
   outline: 7px solid darkgoldenrod; /* временно */
   outline-offset: -7px; /* временно */
+
+  width: 940px;
+
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .contacts-inner-footer-secondary-one {
@@ -1095,6 +1135,25 @@ img {
   Каталог сайта start
 */
 
+.catalog-technomart {
+  width: 940px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  outline: 5px solid gold; /* временно */
+  outline-offset: -5px; /* временно */
+}
+
+.bread-crumbs {
+  list-style: none;
+
+  padding-left: 0;
+
+  outline: 5px solid green; /* временно */
+  outline-offset: -5px; /* временно */
+}
+
 .item-bread-crumb {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 13px;
@@ -1106,6 +1165,9 @@ img {
 
 .perforators-header {
   background-color: var(--very-very-lighter-grey-color);
+
+  outline: 5px solid red; /* временно */
+  outline-offset: -5px; /* временно */
 }
 
 .perforators-header h2 {
@@ -1116,6 +1178,15 @@ img {
   font-style: normal;
   text-transform: uppercase;
   color: var(--wet-asphalt-color);
+}
+
+.pagin {
+  list-style: none;
+
+  padding-left: 0;
+
+  outline: 5px solid sandybrown; /* временно */
+  outline-offset: -5px; /* временно */
 }
 
 .pagin-items {
@@ -1150,8 +1221,18 @@ img {
   cursor: default;
 }
 
-.about-perforators {
+.about-perforators-wrapper {
   background-color: var(--light-white-color);
+}
+
+.about-perforators {
+  width: 940px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  outline: 5px solid blue; /* временно */
+  outline-offset: -5px; /* временно */
 }
 
 .about-perforators-header {
@@ -1164,7 +1245,7 @@ img {
   color: var(--basic-black-color);
 }
 
-.about-perforators-artcle {
+.about-perforators-article {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
