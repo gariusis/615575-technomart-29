@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -21,29 +21,37 @@
       <h2 class="visually-hidden">
         Шапка сайта
       </h2>
-      <a href="index.html" class="logo-master logo-master-header" tabindex="0">
-        <img class="logo-master logo-master-header cursor-default" src="https://via.placeholder.com/150x100" width="150"
-          height="100" alt="Логотип магазина Техномарт">
-      </a>
-      <span class="some-form" tabindex="0">
-        <!-- Здесь будет форма поиска -->
-      </span>
-      <div class="bookmark-inner bookmarks-number" tabindex="0">
-        <img class="bookmark-ico" src="https://via.placeholder.com/150x100" width="150" height="100"
-          alt="Иконка закладки">
-        <p class="bookmarks bookmarks-number general-style-header">
-          Закладки: 0
-        </p>
+      <div class="head-wrapper-left">
+        <a href="index.html" class="logo-master logo-master-header" tabindex="0">
+          <img class="logo-master logo-master-header" src="img/logo-technomart.svg" width="108" height="18"
+            alt="Логотип магазина Техномарт">
+        </a>
+        <div class="some-form" tabindex="0">
+          <!-- Здесь будет форма поиска -->
+          <form action="/">
+            <input type="text">
+          </form>
+        </div>
       </div>
-      <div class="basket-inner basket-add-background-color" tabindex="0">
-        <img class="basket-ico" src="https://via.placeholder.com/150x100" width="150" height="100" alt="Иконка корзины">
-        <p class="basket general-style-header">
-          Корзина: 10
-        </p>
+      <div class="head-wrapper-right">
+        <div class="bookmark-inner bookmarks-number" tabindex="0">
+          <img class="bookmark-ico" src="https://via.placeholder.com/150x100" width="150" height="100"
+            alt="Иконка закладки">
+          <p class="bookmarks bookmarks-number general-style-header">
+            Закладки: 0
+          </p>
+        </div>
+        <div class="basket-inner basket-add-background-color" tabindex="0">
+          <img class="basket-ico" src="https://via.placeholder.com/150x100" width="150" height="100"
+            alt="Иконка корзины">
+          <p class="basket general-style-header">
+            Корзина: 10
+          </p>
+        </div>
+        <button type="button" class="order-registration">
+          Оформить заказ
+        </button>
       </div>
-      <button type="button" class="order-registration">
-        Оформить заказ
-      </button>
     </section>
   </header>
   <!-- Шапка сайта end -->
@@ -154,9 +162,11 @@
 
   <main class="content">
     <!-- Страница с инструментами магазина Техномарт start -->
-      <h1 class="content-empty-page"1>
+    <div class="content-empty-page-wrapper">
+      <h1 class="content-empty-page">
         Страница с инструментами магазина Техномарт
       </h1>
+    </div>
     <!-- Страница с инструментами магазина Техномарт end -->
   </main>
 
@@ -167,90 +177,92 @@
     </h2>
     <!-- Первый блок подвала сайта start -->
     <div class="one-block-wrapper">
-      <div class="one-block-nav-master">
-        <section class="nav-master-footer">
-          <h2 class="visually-hidden">
-            Контакты
-          </h2>
-          <a class="logo-master logo-master-footer" tabindex="0">
-            <img class="logo-master logo-master-header cursor-default" src="https://via.placeholder.com/150x100" width="150"
-            height="100" alt="Логотип магазина Техномарт">
-          </a>
-          <nav class="nav-items-footer-main-one">
-            <ul class="nav-items nav-items-footer-one">
-              <li class="navigation-item navigation-item-footer-main-one">
-                <a class="navigation-item-link navigation-item-link-footer-main-one" href="index.html">
-                  Главная
+      <div class="one-block-container">
+        <div class="one-block-nav-master">
+          <section class="nav-master-footer">
+            <h2 class="visually-hidden">
+              Контакты
+            </h2>
+            <a href="index.htm;" class="logo-master logo-master-footer" tabindex="0">
+              <img class="logo-master logo-master-header" src="img/logo-technomart.svg" width="108"
+              height="18" alt="Логотип магазина Техномарт">
+            </a>
+            <nav class="nav-items-footer-main-one">
+              <ul class="nav-items nav-items-footer-one">
+                <li class="navigation-item navigation-item-footer-main-one">
+                  <a class="navigation-item-link navigation-item-link-footer-main-one" href="index.html">
+                    Главная
+                  </a>
+                </li>
+                <li class="navigation-item navigation-item-footer-main-one">
+                  <a class="navigation-item-link navigation-item-link-footer-main-one" href="company.html">
+                    Компания
+                  </a>
+                </li>
+                <li class="navigation-item navigation-item-footer-main-one">
+                  <a class="navigation-item-link navigation-item-link-footer-main-one" href="news.html">
+                    Новости
+                  </a>
+                </li>
+                <li class="navigation-item navigation-item-footer-main-one">
+                  <a class="navigation-item-link navigation-item-link-footer-main-one" href="catalog.html">
+                    Каталог
+                  </a>
+                </li>
+                <li class="navigation-item navigation-item-footer-main-one">
+                  <a class="navigation-item-link navigation-item-link-footer-main-one" href="delivery.html">
+                    Доставка
+                  </a>
+                </li>
+                <li class="navigation-item navigation-item-footer-main-one">
+                  <a class="navigation-item-link navigation-item-link-footer-main-one" href="blank.html">
+                    Контакты
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </section>
+        </div>
+
+        <div class="two-block-nav-master">
+          <article class="contacts-inner-footer-secondary-one">
+            <h2 class="visually-hidden">
+              Контакты
+            </h2>
+            <address class="contacts-of-technomart-footer-secondary-one">
+              <p class="address-of-technomart-footer-secondary-one address-telephone-footer-secondary-one">
+                г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+              </p>
+              <a class="telephone-of-tecnomart-footer-secondary-one address-telephone-footer-secondary-one"
+                href="tel:78125550555">+7 (812) 555-05-55</a>
+            </address>
+          </article>
+
+          <nav class="nav-items-footer-secondary-one">
+            <ul class="nav-items nav-items-footer-secondary-one">
+              <li class="navigation-item item-footer-secondary-one">
+                <a class="navigation-item-link navigation-item-link-footer-secondary-one" href="materials.html">
+                  Материалы
                 </a>
               </li>
-              <li class="navigation-item navigation-item-footer-main-one">
-                <a class="navigation-item-link navigation-item-link-footer-main-one" href="company.html">
-                  Компания
+              <li class="navigation-item item-footer-secondary-one">
+                <a class="navigation-item-link navigation-item-link-footer-secondary-one" href="technics.html">
+                  Техника
                 </a>
               </li>
-              <li class="navigation-item navigation-item-footer-main-one">
-                <a class="navigation-item-link navigation-item-link-footer-main-one" href="news.html">
-                  Новости
+              <li class="navigation-item item-footer-secondary-one cursor-default">
+                <a class="navigation-item-link navigation-item-link-footer-secondary-one cursor-default">
+                  Инструмент
                 </a>
               </li>
-              <li class="navigation-item navigation-item-footer-main-one">
-                <a class="navigation-item-link navigation-item-link-footer-main-one" href="catalog.html">
-                  Каталог
-                </a>
-              </li>
-              <li class="navigation-item navigation-item-footer-main-one">
-                <a class="navigation-item-link navigation-item-link-footer-main-one" href="delivery.html">
-                  Доставка
-                </a>
-              </li>
-              <li class="navigation-item navigation-item-footer-main-one">
-                <a class="navigation-item-link navigation-item-link-footer-main-one" href="blank.html">
-                  Контакты
+              <li class="navigation-item item-footer-secondary-one">
+                <a class="navigation-item-link navigation-item-link-footer-secondary-one" href="special.html">
+                  Спецпредложения
                 </a>
               </li>
             </ul>
           </nav>
-        </section>
-      </div>
-
-      <div>
-        <article class="contacts-inner-footer-secondary-one">
-          <h2 class="visually-hidden">
-            Контакты
-          </h2>
-          <address class="contacts-of-technomart-footer-secondary-one">
-            <p class="address-of-technomart-footer-secondary-one address-telephone-footer-secondary-one">
-              г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-            </p>
-            <a class="telephone-of-tecnomart-footer-secondary-one address-telephone-footer-secondary-one"
-              href="tel:78125550555">+7 (812) 555-05-55</a>
-          </address>
-        </article>
-
-        <nav class="nav-items-footer-secondary-one">
-          <ul class="nav-items">
-            <li class="navigation-item item-footer-secondary-one">
-              <a class="navigation-item-link navigation-item-link-footer-secondary-one" href="materials.html">
-                Материалы
-              </a>
-            </li>
-            <li class="navigation-item item-footer-secondary-one">
-              <a class="navigation-item-link navigation-item-link-footer-secondary-one" href="technics.html">
-                Техника
-              </a>
-            </li>
-            <li class="navigation-item item-footer-secondary-one cursor-default">
-              <a class="navigation-item-link navigation-item-link-footer-secondary-one cursor-default">
-                Инструмент
-              </a>
-            </li>
-            <li class="navigation-item item-footer-secondary-one">
-              <a class="navigation-item-link navigation-item-link-footer-secondary-one" href="special.html">
-                Спецпредложения
-              </a>
-            </li>
-          </ul>
-        </nav>
+        </div>
       </div>
     </div>
     <!-- Первый блок подвала сайта end -->

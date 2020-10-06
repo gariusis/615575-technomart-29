@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -21,29 +21,37 @@
       <h2 class="visually-hidden">
         Шапка сайта
       </h2>
-      <a href="index.html" class="logo-master logo-master-header" tabindex="0">
-        <img class="logo-master logo-master-header cursor-default" src="https://via.placeholder.com/150x100" width="150"
-          height="100" alt="Логотип магазина Техномарт">
-      </a>
-      <span class="some-form" tabindex="0">
-        <!-- Здесь будет форма поиска -->
-      </span>
-      <div class="bookmark-inner bookmarks-number" tabindex="0">
-        <img class="bookmark-ico" src="https://via.placeholder.com/150x100" width="150" height="100"
-          alt="Иконка закладки">
-        <p class="bookmarks bookmarks-number general-style-header">
-          Закладки: 0
-        </p>
+      <div class="head-wrapper-left">
+        <a href="index.html" class="logo-master logo-master-header" tabindex="0">
+          <img class="logo-master logo-master-header" src="img/logo-technomart.svg" width="108" height="18"
+            alt="Логотип магазина Техномарт">
+        </a>
+        <div class="some-form" tabindex="0">
+          <!-- Здесь будет форма поиска -->
+          <form action="/">
+            <input type="text">
+          </form>
+        </div>
       </div>
-      <div class="basket-inner basket-add-background-color" tabindex="0">
-        <img class="basket-ico" src="https://via.placeholder.com/150x100" width="150" height="100" alt="Иконка корзины">
-        <p class="basket general-style-header">
-          Корзина: 10
-        </p>
+      <div class="head-wrapper-right">
+        <div class="bookmark-inner bookmarks-number" tabindex="0">
+          <img class="bookmark-ico" src="https://via.placeholder.com/150x100" width="150" height="100"
+            alt="Иконка закладки">
+          <p class="bookmarks bookmarks-number general-style-header">
+            Закладки: 0
+          </p>
+        </div>
+        <div class="basket-inner basket-add-background-color" tabindex="0">
+          <img class="basket-ico" src="https://via.placeholder.com/150x100" width="150" height="100"
+            alt="Иконка корзины">
+          <p class="basket general-style-header">
+            Корзина: 10
+          </p>
+        </div>
+        <button type="button" class="order-registration">
+          Оформить заказ
+        </button>
       </div>
-      <button type="button" class="order-registration">
-        Оформить заказ
-      </button>
     </section>
   </header>
   <!-- Шапка сайта end -->
@@ -78,11 +86,13 @@
           </h2>
           <div class="logined-user">
             <a class="logined-user-link" href="blank.html">
-              <img class="logined-user-ico" src="https://via.placeholder.com/150x100" width="150" height="100" alt="Иконка кнопки пользователя">
+              <img class="logined-user-ico" src="https://via.placeholder.com/150x100" width="150" height="100"
+                alt="Иконка кнопки пользователя">
               Равшан Джамшутович
             </a>
             <a class="logined-user-button" href="index.html">
-              <img class="logined-user-exit-ico" src="https://via.placeholder.com/150x100" width="150" height="100" alt="Иконка кнопки Выход">
+              <img class="logined-user-exit-ico" src="https://via.placeholder.com/150x100" width="150" height="100"
+                alt="Иконка кнопки Выход">
             </a>
           </div>
           <ul class="navigation-logined-user">
@@ -151,455 +161,459 @@
   <!-- Блок с навигацией и информацией для пользователя end -->
 
   <main class="content">
-    <!--Каталог сайта start -->
-    <ul class="bread-crumbs">
-      <li class="bread-crumbs-items">
-        <a class="item-bread-crumb" href="index.html">
-          <img src="https://via.placeholder.com/150x100" width="150" height="100"
-            alt="Иконка ссылки на Главную страницу сайта">
-        </a>
-      </li>
-      <li class="bread-crumbs-items">
-        <img class="bread-crumbs-arrow-right" src="https://via.placeholder.com/150x100" width="150" height="100"
-          alt="Направляющая вправо">
-      </li>
-      <li class="bread-crumbs-items cursor-default">
-        <a class="item-bread-crumb cursor-default">
-          Каталог
-        </a>
-      </li>
-      <li class="bread-crumbs-items">
-        <img class="bread-crumbs-arrow-right" src="https://via.placeholder.com/150x100" width="150" height="100"
-          alt="Направляющая вправо">
-      </li>
-      <li class="bread-crumbs-items">
-        <a class="item-bread-crumb cursor-default">
-          Инструмент
-        </a>
-      </li>
-      <li class="bread-crumbs-items">
-        <img class="bread-crumbs-arrow-right" src="https://via.placeholder.com/150x100" width="150" height="100"
-          alt="Направляющая вправо">
-      </li>
-      <li class="bread-crumbs-items">
-        <h3 class="item-bread-crumb">
-          Перфораторы
-        </h3>
-      </li>
-    </ul>
+    <div class="catalog-technomart">
+      <!--Каталог сайта start -->
+      <ul class="bread-crumbs">
+        <li class="bread-crumbs-items">
+          <a class="item-bread-crumb" href="index.html">
+            <img src="https://via.placeholder.com/150x100" width="150" height="100"
+              alt="Иконка ссылки на Главную страницу сайта">
+          </a>
+        </li>
+        <li class="bread-crumbs-items">
+          <img class="bread-crumbs-arrow-right" src="https://via.placeholder.com/150x100" width="150" height="100"
+            alt="Направляющая вправо">
+        </li>
+        <li class="bread-crumbs-items cursor-default">
+          <a class="item-bread-crumb cursor-default">
+            Каталог
+          </a>
+        </li>
+        <li class="bread-crumbs-items">
+          <img class="bread-crumbs-arrow-right" src="https://via.placeholder.com/150x100" width="150" height="100"
+            alt="Направляющая вправо">
+        </li>
+        <li class="bread-crumbs-items">
+          <a class="item-bread-crumb cursor-default">
+            Инструмент
+          </a>
+        </li>
+        <li class="bread-crumbs-items">
+          <img class="bread-crumbs-arrow-right" src="https://via.placeholder.com/150x100" width="150" height="100"
+            alt="Направляющая вправо">
+        </li>
+        <li class="bread-crumbs-items">
+          <h3 class="item-bread-crumb">
+            Перфораторы
+          </h3>
+        </li>
+      </ul>
 
-    <div class="perforators-header">
-      <h2>
-        Пефораторы
-      </h2>
+      <div class="perforators-header">
+        <h2>
+          Пефораторы
+        </h2>
+      </div>
+
+      <div class="fikter-catalog">
+        <section>
+          <h2>
+            Фильтр товаров
+          </h2>
+          <!-- Здесь будет фильтр товаров -->
+        </section>
+
+        <section>
+          <h2 class="visualy-hidden">
+            Карточки товаров магазина Техномарт
+          </h2>
+          <!-- Блок с популяярными товарами start -->
+          <section class="info-product-wrapper">
+            <h2 class="visually-hidden">
+              Товары
+            </h2>
+            <ul class="product-items-catalog">
+              <!-- Карточка товара start -->
+              <li class="item-product">
+                <div class="item-flex">
+                  <div class="info-card-new">
+                    <p class="info-card-new-text info-card-new-text-add">
+                      New
+                    </p>
+                  </div>
+                  <img class="perforator-pic" src="img/BOSCH-BFG-6000.jpg" width="144" height="128"
+                    alt="Перфоратор BOSCH BFG 6000">
+                  <p class="item-header">
+                    Перфоратор BOSCH BFG 6000
+                  </p>
+                  <p class="item-price">
+                    <s>
+                      32500 Р.
+                    </s>
+                  </p>
+                  <button type="button" class="product-button">
+                    25500 Р.
+                  </button>
+                </div>
+                <!-- Скрытый слой, появляется при наведении на карточку товара start -->
+                <div>
+                  <button type="button" class="product-button-hover">
+                    <img src="https://via.placeholder.com/150x100" width="150" height="100"
+                      alt="Иконка для кнопки Купить">
+                    Купить
+                  </button>
+                  <button type="button" class="product-button-boomarks">
+                    В закладки
+                  </button>
+                </div>
+                <!-- Скрытый слой, появляется при наведении на карточку товара end -->
+              </li>
+              <!-- Карточка товара end -->
+              <!-- - -->
+              <!-- Карточка товара start -->
+              <li class="item-product">
+                <div class="item-flex">
+                  <div class="info-card-new">
+                    <p class="info-card-new-text info-card-new-text-add">
+                      New
+                    </p>
+                  </div>
+                  <img class="perforator-pic" src="img/BOSCH-BFG-6000.jpg" width="144" height="128"
+                    alt="Перфоратор BOSCH BFG 6000">
+                  <p class="item-header">
+                    Перфоратор BOSCH BFG 6000
+                  </p>
+                  <p class="item-price">
+                    <s>
+                      30500 Р.
+                    </s>
+                  </p>
+                  <button type="button" class="product-button">
+                    25500 Р.
+                  </button>
+                </div>
+                <!-- Скрытый слой, появляется при наведении на карточку товара start -->
+                <div>
+                  <button type="button" class="product-button-hover">
+                    <img src="https://via.placeholder.com/150x100" width="150" height="100"
+                      alt="Иконка для кнопки Купить">
+                    Купить
+                  </button>
+                  <button type="button" class="product-button-boomarks">
+                    В закладки
+                  </button>
+                </div>
+                <!-- Скрытый слой, появляется при наведении на карточку товара end -->
+              </li>
+              <!-- Карточка товара end -->
+              <!-- - -->
+              <!-- Карточка товара start -->
+              <li class="item-product">
+                <div class="item-flex">
+                  <div class="info-card-new">
+                    <p class="info-card-new-text">
+                      New
+                    </p>
+                  </div>
+                  <img class="perforator-pic" src="img/BOSCH-BFG-6000.jpg" width="144" height="128"
+                    alt="Перфоратор BOSCH BFG 6000">
+                  <p class="item-header">
+                    Перфоратор BOSCH BFG 6000
+                  </p>
+                  <p class="item-price">
+                    <s>
+                      30500 Р.
+                    </s>
+                  </p>
+                  <button type="button" class="product-button">
+                    25500 Р.
+                  </button>
+                </div>
+                <!-- Скрытый слой, появляется при наведении на карточку товара start -->
+                <div>
+                  <button type="button" class="product-button-hover">
+                    <img src="https://via.placeholder.com/150x100" width="150" height="100"
+                      alt="Иконка для кнопки Купить">
+                    Купить
+                  </button>
+                  <button type="button" class="product-button-boomarks">
+                    В закладки
+                  </button>
+                </div>
+                <!-- Скрытый слой, появляется при наведении на карточку товара end -->
+              </li>
+              <!-- Карточка товара end -->
+              <!-- - -->
+              <!-- Карточка товара start -->
+              <li class="item-product">
+                <div class="item-flex">
+                  <div class="info-card-new">
+                    <p class="info-card-new-text">
+                      New
+                    </p>
+                  </div>
+                  <img class="perforator-pic" src="img/BOSCH-BFG-3000.jpg" width="127" height="112"
+                    alt="Перфоратор BOSCH BFG 3000">
+                  <p class="item-header">
+                    Перфоратор BOSCH BFG 3000
+                  </p>
+                  <p class="item-price">
+                    <s>
+                      22500 Р.
+                    </s>
+                  </p>
+                  <button type="button" class="product-button">
+                    15500 Р.
+                  </button>
+                </div>
+                <!-- Скрытый слой, появляется при наведении на карточку товара start -->
+                <div>
+                  <button type="button" class="product-button-hover">
+                    <img src="https://via.placeholder.com/150x100" width="150" height="100"
+                      alt="Иконка для кнопки Купить">
+                    Купить
+                  </button>
+                  <button type="button" class="product-button-boomarks">
+                    В закладки
+                  </button>
+                </div>
+                <!-- Скрытый слой, появляется при наведении на карточку товара end -->
+              </li>
+              <!-- Карточка товара end -->
+              <!-- - -->
+              <!-- Карточка товара start -->
+              <li class="item-product">
+                <div class="item-flex">
+                  <div class="info-card-new">
+                    <p class="info-card-new-text info-card-new-text-add">
+                      New
+                    </p>
+                  </div>
+                  <img class="perforator-pic" src="img/BOSCH-BFG-6000.jpg" width="144" height="128"
+                    alt="Перфоратор BOSCH BFG 6000">
+                  <p class="item-header">
+                    Перфоратор BOSCH BFG 6000
+                  </p>
+                  <p class="item-price">
+                    <s>
+                      30500 Р.
+                    </s>
+                  </p>
+                  <button type="button" class="product-button">
+                    25500 Р.
+                  </button>
+                </div>
+                <!-- Скрытый слой, появляется при наведении на карточку товара start -->
+                <div>
+                  <button type="button" class="product-button-hover">
+                    <img src="https://via.placeholder.com/150x100" width="150" height="100"
+                      alt="Иконка для кнопки Купить">
+                    Купить
+                  </button>
+                  <button type="button" class="product-button-boomarks">
+                    В закладки
+                  </button>
+                </div>
+                <!-- Скрытый слой, появляется при наведении на карточку товара end -->
+              </li>
+              <!-- Карточка товара end -->
+              <!-- - -->
+              <!-- Карточка товара start -->
+              <li class="item-product">
+                <div class="item-flex">
+                  <div class="info-card-new">
+                    <p class="info-card-new-text">
+                      New
+                    </p>
+                  </div>
+                  <img class="perforator-pic" src="img/BOSCH-BFG-2000.jpg" width="127" height="112"
+                    alt="Перфоратор BOSCH BFG 2000">
+                  <p class="item-header">
+                    Перфоратор BOSCH BFG 2000
+                  </p>
+                  <p class="item-price">
+                    <s class="info-card-new-text-add">
+                      <!-- В макете отсутствует зачеркнутая цена -->
+                      30500 Р.
+                    </s>
+                  </p>
+                  <button type="button" class="product-button">
+                    12500 Р.
+                  </button>
+                </div>
+                <!-- Скрытый слой, появляется при наведении на карточку товара start -->
+                <div>
+                  <button type="button" class="product-button-hover">
+                    <img src="https://via.placeholder.com/150x100" width="150" height="100"
+                      alt="Иконка для кнопки Купить">
+                    Купить
+                  </button>
+                  <button type="button" class="product-button-boomarks">
+                    В закладки
+                  </button>
+                </div>
+                <!-- Скрытый слой, появляется при наведении на карточку товара end -->
+              </li>
+              <!-- Карточка товара end -->
+              <!-- - -->
+              <!-- Карточка товара start -->
+              <li class="item-product">
+                <div class="item-flex">
+                  <div class="info-card-new">
+                    <p class="info-card-new-text">
+                      New
+                    </p>
+                  </div>
+                  <img class="perforator-pic" src="img/BOSCH-BFG-3000.jpg" width="127" height="112"
+                    alt="Перфоратор BOSCH BFG 3000">
+                  <p class="item-header">
+                    Перфоратор BOSCH BFG 3000
+                  </p>
+                  <p class="item-price">
+                    <s>
+                      22500 Р.
+                    </s>
+                  </p>
+                  <button type="button" class="product-button">
+                    15500 Р.
+                  </button>
+                </div>
+                <!-- Скрытый слой, появляется при наведении на карточку товара start -->
+                <div>
+                  <button type="button" class="product-button-hover">
+                    <img src="https://via.placeholder.com/150x100" width="150" height="100"
+                      alt="Иконка для кнопки Купить">
+                    Купить
+                  </button>
+                  <button type="button" class="product-button-boomarks">
+                    В закладки
+                  </button>
+                </div>
+                <!-- Скрытый слой, появляется при наведении на карточку товара end -->
+              </li>
+              <!-- Карточка товара end -->
+              <!-- - -->
+              <!-- Карточка товара start -->
+              <li class="item-product">
+                <div class="item-flex">
+                  <div class="info-card-new">
+                    <p class="info-card-new-text info-card-new-text-add">
+                      New
+                    </p>
+                  </div>
+                  <img class="perforator-pic" src="img/BOSCH-BFG-6000.jpg" width="144" height="128"
+                    alt="Перфоратор BOSCH BFG 6000">
+                  <p class="item-header">
+                    Перфоратор BOSCH BFG 6000
+                  </p>
+                  <p class="item-price">
+                    <s>
+                      30500 Р.
+                    </s>
+                  </p>
+                  <button type="button" class="product-button">
+                    25500 Р.
+                  </button>
+                </div>
+                <!-- Скрытый слой, появляется при наведении на карточку товара start -->
+                <div>
+                  <button type="button" class="product-button-hover">
+                    <img src="https://via.placeholder.com/150x100" width="150" height="100"
+                      alt="Иконка для кнопки Купить">
+                    Купить
+                  </button>
+                  <button type="button" class="product-button-boomarks">
+                    В закладки
+                  </button>
+                </div>
+                <!-- Скрытый слой, появляется при наведении на карточку товара end -->
+              </li>
+              <!-- Карточка товара end -->
+              <!-- - -->
+              <!-- Карточка товара start -->
+              <li class="item-product">
+                <div class="item-flex">
+                  <div class="info-card-new">
+                    <p class="info-card-new-text">
+                      New
+                    </p>
+                  </div>
+                  <img class="perforator-pic" src="img/BOSCH-BFG-2000.jpg" width="127" height="112"
+                    alt="Перфоратор BOSCH BFG 2000">
+                  <p class="item-header">
+                    Перфоратор BOSCH BFG 2000
+                  </p>
+                  <p class="item-price">
+                    <s class="info-card-new-text-add">
+                      <!-- В макете отсутствует зачеркнутая цена -->
+                      32500 Р.
+                    </s>
+                  </p>
+                  <button type="button" class="product-button">
+                    15500 Р.
+                  </button>
+                </div>
+                <!-- Скрытый слой, появляется при наведении на карточку товара start -->
+                <div>
+                  <button type="button" class="product-button-hover">
+                    <img src="https://via.placeholder.com/150x100" width="150" height="100"
+                      alt="Иконка для кнопки Купить">
+                    Купить
+                  </button>
+                  <button type="button" class="product-button-boomarks">
+                    В закладки
+                  </button>
+                </div>
+                <!-- Скрытый слой, появляется при наведении на карточку товара end -->
+              </li>
+              <!-- Карточка товара end -->
+            </ul>
+            <ul class="pagin">
+              <li class="pagin-items pagin-item-link-active">
+                <a class="pagin-item-link pagin-item-link-active">1</a>
+              </li>
+              <li class="pagin-items">
+                <a class="pagin-item-link" href="#">
+                  2
+                </a>
+              </li>
+              <li class="pagin-items">
+                <a href="#">
+                  3
+                </a>
+              </li>
+              <li class="pagin-items">
+                <a class="pagin-item-link" href="#">
+                  СЛЕДУЮЩАЯ
+                </a>
+              </li>
+            </ul>
+          </section>
+          <!-- Блок с популяярными товарами end -->
+        </section>
+      </div>
     </div>
 
-    <div class="fikter-catalog">
-      <section>
-        <h2>
-          Фильтр товаров
-        </h2>
-        <!-- Здесь будет фильтр товаров -->
-      </section>
+    <div class="about-perforators-wrapper">
+      <!-- ПАРА СЛОВ О ПЕРФОРАТОРАХ start -->
+      <div class="about-perforators">
+        <h1 class="visuall-hidden">
+          ПАРА СЛОВ О ПЕРФОРАТОРАХ
+        </h1>
 
-      <section>
-        <h2 class="visualy-hidden">
-          Карточки товаров магазина Техномарт
-        </h2>
-        <!-- Блок с популяярными товарами start -->
-        <section class="info-product-wrapper">
-          <h2 class="visually-hidden">
-            Товары
-          </h2>
-          <ul class="product-items">
-            <!-- Карточка товара start -->
-            <li class="item-product">
-              <div class="item-flex">
-                <div class="info-card-new">
-                  <p class="info-card-new-text info-card-new-text-add">
-                    New
-                  </p>
-                </div>
-                <img class="perforator-pic" src="img/BOSCH-BFG-6000.jpg" width="144" height="128"
-                alt="Перфоратор BOSCH BFG 6000">
-                <p class="item-header">
-                  Перфоратор BOSCH BFG 6000
-                </p>
-                <p class="item-price">
-                  <s>
-                    32500 Р.
-                  </s>
-                </p>
-                <button type="button" class="product-button">
-                  25500 Р.
-                </button>
-              </div>
-              <!-- Скрытый слой, появляется при наведении на карточку товара start -->
-              <div>
-                <button type="button" class="product-button-hover">
-                  <img src="https://via.placeholder.com/150x100" width="150" height="100"
-                    alt="Иконка для кнопки Купить">
-                  Купить
-                </button>
-                <button type="button" class="product-button-boomarks">
-                  В закладки
-                </button>
-              </div>
-              <!-- Скрытый слой, появляется при наведении на карточку товара end -->
-            </li>
-            <!-- Карточка товара end -->
-            <!-- - -->
-            <!-- Карточка товара start -->
-            <li class="item-product">
-              <div class="item-flex">
-                <div class="info-card-new">
-                  <p class="info-card-new-text info-card-new-text-add">
-                    New
-                  </p>
-                </div>
-                <img class="perforator-pic" src="img/BOSCH-BFG-6000.jpg" width="144" height="128"
-                alt="Перфоратор BOSCH BFG 6000">
-                <p class="item-header">
-                  Перфоратор BOSCH BFG 6000
-                </p>
-                <p class="item-price">
-                  <s>
-                    30500 Р.
-                  </s>
-                </p>
-                <button type="button" class="product-button">
-                  25500 Р.
-                </button>
-              </div>
-              <!-- Скрытый слой, появляется при наведении на карточку товара start -->
-              <div>
-                <button type="button" class="product-button-hover">
-                  <img src="https://via.placeholder.com/150x100" width="150" height="100"
-                    alt="Иконка для кнопки Купить">
-                  Купить
-                </button>
-                <button type="button" class="product-button-boomarks">
-                  В закладки
-                </button>
-              </div>
-              <!-- Скрытый слой, появляется при наведении на карточку товара end -->
-            </li>
-            <!-- Карточка товара end -->
-            <!-- - -->
-            <!-- Карточка товара start -->
-            <li class="item-product">
-              <div class="item-flex">
-                <div class="info-card-new">
-                  <p class="info-card-new-text">
-                    New
-                  </p>
-                </div>
-                <img class="perforator-pic" src="img/BOSCH-BFG-6000.jpg" width="144" height="128"
-                alt="Перфоратор BOSCH BFG 6000">
-                <p class="item-header">
-                  Перфоратор BOSCH BFG 6000
-                </p>
-                <p class="item-price">
-                  <s>
-                    30500 Р.
-                  </s>
-                </p>
-                <button type="button" class="product-button">
-                  25500 Р.
-                </button>
-              </div>
-              <!-- Скрытый слой, появляется при наведении на карточку товара start -->
-              <div>
-                <button type="button" class="product-button-hover">
-                  <img src="https://via.placeholder.com/150x100" width="150" height="100"
-                    alt="Иконка для кнопки Купить">
-                  Купить
-                </button>
-                <button type="button" class="product-button-boomarks">
-                  В закладки
-                </button>
-              </div>
-              <!-- Скрытый слой, появляется при наведении на карточку товара end -->
-            </li>
-            <!-- Карточка товара end -->
-            <!-- - -->
-            <!-- Карточка товара start -->
-            <li class="item-product">
-              <div class="item-flex">
-                <div class="info-card-new">
-                  <p class="info-card-new-text">
-                    New
-                  </p>
-                </div>
-                <img class="perforator-pic" src="img/BOSCH-BFG-3000.jpg" width="127" height="112"
-                alt="Перфоратор BOSCH BFG 3000">
-                <p class="item-header">
-                  Перфоратор BOSCH BFG 3000
-                </p>
-                <p class="item-price">
-                  <s>
-                    22500 Р.
-                  </s>
-                </p>
-                <button type="button" class="product-button">
-                  15500 Р.
-                </button>
-              </div>
-              <!-- Скрытый слой, появляется при наведении на карточку товара start -->
-              <div>
-                <button type="button" class="product-button-hover">
-                  <img src="https://via.placeholder.com/150x100" width="150" height="100"
-                    alt="Иконка для кнопки Купить">
-                  Купить
-                </button>
-                <button type="button" class="product-button-boomarks">
-                  В закладки
-                </button>
-              </div>
-              <!-- Скрытый слой, появляется при наведении на карточку товара end -->
-            </li>
-            <!-- Карточка товара end -->
-            <!-- - -->
-            <!-- Карточка товара start -->
-            <li class="item-product">
-              <div class="item-flex">
-                <div class="info-card-new">
-                  <p class="info-card-new-text info-card-new-text-add">
-                    New
-                  </p>
-                </div>
-                <img class="perforator-pic" src="img/BOSCH-BFG-6000.jpg" width="144" height="128"
-                alt="Перфоратор BOSCH BFG 6000">
-                <p class="item-header">
-                  Перфоратор BOSCH BFG 6000
-                </p>
-                <p class="item-price">
-                  <s>
-                    30500 Р.
-                  </s>
-                </p>
-                <button type="button" class="product-button">
-                  25500 Р.
-                </button>
-              </div>
-              <!-- Скрытый слой, появляется при наведении на карточку товара start -->
-              <div>
-                <button type="button" class="product-button-hover">
-                  <img src="https://via.placeholder.com/150x100" width="150" height="100"
-                    alt="Иконка для кнопки Купить">
-                  Купить
-                </button>
-                <button type="button" class="product-button-boomarks">
-                  В закладки
-                </button>
-              </div>
-              <!-- Скрытый слой, появляется при наведении на карточку товара end -->
-            </li>
-            <!-- Карточка товара end -->
-            <!-- - -->
-            <!-- Карточка товара start -->
-            <li class="item-product">
-              <div class="item-flex">
-                <div class="info-card-new">
-                  <p class="info-card-new-text">
-                    New
-                  </p>
-                </div>
-                <img class="perforator-pic" src="img/BOSCH-BFG-2000.jpg" width="127" height="112"
-                alt="Перфоратор BOSCH BFG 2000">
-                <p class="item-header">
-                  Перфоратор BOSCH BFG 2000
-                </p>
-                <p class="item-price">
-                  <s class="info-card-new-text-add">
-                    <!-- В макете отсутствует зачеркнутая цена -->
-                    30500 Р.
-                  </s>
-                </p>
-                <button type="button" class="product-button">
-                  12500 Р.
-                </button>
-              </div>
-              <!-- Скрытый слой, появляется при наведении на карточку товара start -->
-              <div>
-                <button type="button" class="product-button-hover">
-                  <img src="https://via.placeholder.com/150x100" width="150" height="100"
-                    alt="Иконка для кнопки Купить">
-                  Купить
-                </button>
-                <button type="button" class="product-button-boomarks">
-                  В закладки
-                </button>
-              </div>
-              <!-- Скрытый слой, появляется при наведении на карточку товара end -->
-            </li>
-            <!-- Карточка товара end -->
-            <!-- - -->
-            <!-- Карточка товара start -->
-            <li class="item-product">
-              <div class="item-flex">
-                <div class="info-card-new">
-                  <p class="info-card-new-text">
-                    New
-                  </p>
-                </div>
-                <img class="perforator-pic" src="img/BOSCH-BFG-3000.jpg" width="127" height="112"
-                alt="Перфоратор BOSCH BFG 3000">
-                <p class="item-header">
-                  Перфоратор BOSCH BFG 3000
-                </p>
-                <p class="item-price">
-                  <s>
-                    22500 Р.
-                  </s>
-                </p>
-                <button type="button" class="product-button">
-                  15500 Р.
-                </button>
-              </div>
-              <!-- Скрытый слой, появляется при наведении на карточку товара start -->
-              <div>
-                <button type="button" class="product-button-hover">
-                  <img src="https://via.placeholder.com/150x100" width="150" height="100"
-                    alt="Иконка для кнопки Купить">
-                  Купить
-                </button>
-                <button type="button" class="product-button-boomarks">
-                  В закладки
-                </button>
-              </div>
-              <!-- Скрытый слой, появляется при наведении на карточку товара end -->
-            </li>
-            <!-- Карточка товара end -->
-            <!-- - -->
-            <!-- Карточка товара start -->
-            <li class="item-product">
-              <div class="item-flex">
-                <div class="info-card-new">
-                  <p class="info-card-new-text info-card-new-text-add">
-                    New
-                  </p>
-                </div>
-                <img class="perforator-pic" src="img/BOSCH-BFG-6000.jpg" width="144" height="128"
-                alt="Перфоратор BOSCH BFG 6000">
-                <p class="item-header">
-                  Перфоратор BOSCH BFG 6000
-                </p>
-                <p class="item-price">
-                  <s>
-                    30500 Р.
-                  </s>
-                </p>
-                <button type="button" class="product-button">
-                  25500 Р.
-                </button>
-              </div>
-              <!-- Скрытый слой, появляется при наведении на карточку товара start -->
-              <div>
-                <button type="button" class="product-button-hover">
-                  <img src="https://via.placeholder.com/150x100" width="150" height="100"
-                    alt="Иконка для кнопки Купить">
-                  Купить
-                </button>
-                <button type="button" class="product-button-boomarks">
-                  В закладки
-                </button>
-              </div>
-              <!-- Скрытый слой, появляется при наведении на карточку товара end -->
-            </li>
-            <!-- Карточка товара end -->
-            <!-- - -->
-            <!-- Карточка товара start -->
-            <li class="item-product">
-              <div class="item-flex">
-                <div class="info-card-new">
-                  <p class="info-card-new-text">
-                    New
-                  </p>
-                </div>
-                <img class="perforator-pic" src="img/BOSCH-BFG-2000.jpg" width="127" height="112"
-                alt="Перфоратор BOSCH BFG 2000">
-                <p class="item-header">
-                  Перфоратор BOSCH BFG 2000
-                </p>
-                <p class="item-price">
-                  <s class="info-card-new-text-add">
-                    <!-- В макете отсутствует зачеркнутая цена -->
-                    32500 Р.
-                  </s>
-                </p>
-                <button type="button" class="product-button">
-                  15500 Р.
-                </button>
-              </div>
-              <!-- Скрытый слой, появляется при наведении на карточку товара start -->
-              <div>
-                <button type="button" class="product-button-hover">
-                  <img src="https://via.placeholder.com/150x100" width="150" height="100"
-                    alt="Иконка для кнопки Купить">
-                  Купить
-                </button>
-                <button type="button" class="product-button-boomarks">
-                  В закладки
-                </button>
-              </div>
-              <!-- Скрытый слой, появляется при наведении на карточку товара end -->
-            </li>
-            <!-- Карточка товара end -->
-          </ul>
-          <ul class="pagin">
-            <li class="pagin-items pagin-item-link-active">
-              <a class="pagin-item-link pagin-item-link-active">1</a>
-            </li>
-            <li class="pagin-items">
-              <a class="pagin-item-link" href="#">
-                2
-              </a>
-            </li>
-            <li class="pagin-items">
-              <a href="#">
-                3
-              </a>
-            </li>
-            <li class="pagin-items">
-              <a class="pagin-item-link" href="#">
-                СЛЕДУЮЩАЯ
-              </a>
-            </li>
-          </ul>
-        </section>
-        <!-- Блок с популяярными товарами end -->
-
-        <!-- ПАРА СЛОВ О ПЕРФОРАТОРАХ start -->
-        <div class="about-perforators">
-          <h1 class="visuall-hidden">
+        <section class="about-perforators-info">
+          <h2 class="about-perforators-header">
             ПАРА СЛОВ О ПЕРФОРАТОРАХ
-          </h1>
+          </h2>
 
-          <section class="about-perforators-info">
-            <h2 class="about-perforators-header">
-              ПАРА СЛОВ О ПЕРФОРАТОРАХ
-            </h2>
+          <p class="about-perforators-article">
+            Перфоратор — универсальный строительный инструмент.
+            Предназначен для сверления и долбления отверстий в
+            кирпиче, бетоне и камне.<br>
+            Существуют электромеханические и пневматические
+            перфораторы. Современные модели могут выполнять
+            функции дрели, шуруповерта и отбойного молотка.<br>
+            В ассортиментном ряду есть выбор «трехрежимников»:
+            в одном устройстве будут совмещены отбойный молоток
+            и ударная дрель.<br>
+          </p>
 
-            <p class="about-perforators-artcle">
-              Перфоратор — универсальный строительный инструмент.
-              Предназначен для сверления и долбления отверстий в
-              кирпиче, бетоне и камне.<br>
-              Существуют электромеханические и пневматические
-              перфораторы. Современные модели могут выполнять
-              функции дрели, шуруповерта и отбойного молотка.<br>
-              В ассортиментном ряду есть выбор «трехрежимников»:
-              в одном устройстве будут совмещены отбойный молоток
-              и ударная дрель.<br>
-            </p>
+        </section>
 
-          </section>
-
-        </div>
-        <!-- ПАРА СЛОВ О ПЕРФОРАТОРАХ end -->
-        <!-- - -->
-        <!--Каталог сайта end -->
-      </section>
+      </div>
+      <!-- ПАРА СЛОВ О ПЕРФОРАТОРАХ end -->
+      <!-- - -->
+      <!--Каталог сайта end -->
     </div>
   </main>
 
@@ -610,90 +624,92 @@
     </h2>
     <!-- Первый блок подвала сайта start -->
     <div class="one-block-wrapper">
-      <div class="one-block-nav-master">
-        <section class="nav-master-footer">
-          <h2 class="visually-hidden">
-            Контакты
-          </h2>
-          <a href="index.html" class="logo-master logo-master-footer" tabindex="0">
-            <img class="logo-master logo-master-header cursor-default" src="https://via.placeholder.com/150x100" width="150"
-            height="100" alt="Логотип магазина Техномарт">
-          </a>
-          <nav class="nav-items-footer-main-one">
-            <ul class="nav-items nav-items-footer-one">
-              <li class="navigation-item navigation-item-footer-main-one">
-                <a class="navigation-item-link navigation-item-link-footer-main-one" href="index.html">
-                  Главная
+      <div class="one-block-container">
+        <div class="one-block-nav-master">
+          <section class="nav-master-footer">
+            <h2 class="visually-hidden">
+              Контакты
+            </h2>
+            <a href="index.html" class="logo-master logo-master-footer" tabindex="0">
+              <img class="logo-master logo-master-header cursor-default" src="img/logo-technomart.svg" width="108"
+                height="18" alt="Логотип магазина Техномарт">
+            </a>
+            <nav class="nav-items-footer-main-one">
+              <ul class="nav-items nav-items-footer-one">
+                <li class="navigation-item navigation-item-footer-main-one">
+                  <a class="navigation-item-link navigation-item-link-footer-main-one" href="index.html">
+                    Главная
+                  </a>
+                </li>
+                <li class="navigation-item navigation-item-footer-main-one">
+                  <a class="navigation-item-link navigation-item-link-footer-main-one" href="company.html">
+                    Компания
+                  </a>
+                </li>
+                <li class="navigation-item navigation-item-footer-main-one">
+                  <a class="navigation-item-link navigation-item-link-footer-main-one" href="news.html">
+                    Новости
+                  </a>
+                </li>
+                <li class="navigation-item navigation-item-footer-main-one cursor-default">
+                  <a class="navigation-item-link navigation-item-link-footer-main-one cursor-default">
+                    Каталог
+                  </a>
+                </li>
+                <li class="navigation-item navigation-item-footer-main-one">
+                  <a class="navigation-item-link navigation-item-link-footer-main-one" href="delivery.html">
+                    Доставка
+                  </a>
+                </li>
+                <li class="navigation-item navigation-item-footer-main-one">
+                  <a class="navigation-item-link navigation-item-link-footer-main-one" href="blank.html">
+                    Контакты
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </section>
+        </div>
+
+        <div class="two-block-nav-master">
+          <article class="contacts-inner-footer-secondary-one">
+            <h2 class="visually-hidden">
+              Контакты
+            </h2>
+            <address class="contacts-of-technomart-footer-secondary-one">
+              <p class="address-of-technomart-footer-secondary-one address-telephone-footer-secondary-one">
+                г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+              </p>
+              <a class="telephone-of-tecnomart-footer-secondary-one address-telephone-footer-secondary-one"
+                href="tel:78125550555">+7 (812) 555-05-55</a>
+            </address>
+          </article>
+
+          <nav class="nav-items-footer-secondary-one">
+            <ul class="nav-items nav-items-footer-secondary-one">
+              <li class="navigation-item item-footer-secondary-one">
+                <a class="navigation-item-link navigation-item-link-footer-secondary-one" href="materials.html">
+                  Материалы
                 </a>
               </li>
-              <li class="navigation-item navigation-item-footer-main-one">
-                <a class="navigation-item-link navigation-item-link-footer-main-one" href="company.html">
-                  Компания
+              <li class="navigation-item item-footer-secondary-one">
+                <a class="navigation-item-link navigation-item-link-footer-secondary-one" href="technics.html">
+                  Техника
                 </a>
               </li>
-              <li class="navigation-item navigation-item-footer-main-one">
-                <a class="navigation-item-link navigation-item-link-footer-main-one" href="news.html">
-                  Новости
+              <li class="navigation-item item-footer-secondary-one">
+                <a class="navigation-item-link navigation-item-link-footer-secondary-one" href="tool.html">
+                  Инструмент
                 </a>
               </li>
-              <li class="navigation-item navigation-item-footer-main-one cursor-default">
-                <a class="navigation-item-link navigation-item-link-footer-main-one cursor-default">
-                  Каталог
-                </a>
-              </li>
-              <li class="navigation-item navigation-item-footer-main-one">
-                <a class="navigation-item-link navigation-item-link-footer-main-one" href="delivery.html">
-                  Доставка
-                </a>
-              </li>
-              <li class="navigation-item navigation-item-footer-main-one">
-                <a class="navigation-item-link navigation-item-link-footer-main-one" href="blank.html">
-                  Контакты
+              <li class="navigation-item item-footer-secondary-one">
+                <a class="navigation-item-link navigation-item-link-footer-secondary-one" href="special.html">
+                  Спецпредложения
                 </a>
               </li>
             </ul>
           </nav>
-        </section>
-      </div>
-
-      <div>
-        <article class="contacts-inner-footer-secondary-one">
-          <h2 class="visually-hidden">
-            Контакты
-          </h2>
-          <address class="contacts-of-technomart-footer-secondary-one">
-            <p class="address-of-technomart-footer-secondary-one address-telephone-footer-secondary-one">
-              г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-            </p>
-            <a class="telephone-of-tecnomart-footer-secondary-one address-telephone-footer-secondary-one"
-              href="tel:78125550555">+7 (812) 555-05-55</a>
-          </address>
-        </article>
-
-        <nav class="nav-items-footer-secondary-one">
-          <ul class="nav-items">
-            <li class="navigation-item item-footer-secondary-one">
-              <a class="navigation-item-link navigation-item-link-footer-secondary-one" href="materials.html">
-                Материалы
-              </a>
-            </li>
-            <li class="navigation-item item-footer-secondary-one">
-              <a class="navigation-item-link navigation-item-link-footer-secondary-one" href="technics.html">
-                Техника
-              </a>
-            </li>
-            <li class="navigation-item item-footer-secondary-one">
-              <a class="navigation-item-link navigation-item-link-footer-secondary-one" href="tool.html">
-                Инструмент
-              </a>
-            </li>
-            <li class="navigation-item item-footer-secondary-one">
-              <a class="navigation-item-link navigation-item-link-footer-secondary-one" href="special.html">
-                Спецпредложения
-              </a>
-            </li>
-          </ul>
-        </nav>
+        </div>
       </div>
     </div>
     <!-- Первый блок подвала сайта end -->
