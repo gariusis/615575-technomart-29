@@ -1,0 +1,1494 @@
+/*
+  Названия системных шрифтов по ТЗ:
+
+  font-family: 'Cuprum', sans-serif;
+  font-family: 'PT Sans', sans-serif;
+*/
+/* ---------------------- */
+/* Общие настройки start */
+/* Например, одинаковый фон кнопок\ссылок и так далее */
+:root {
+  --basic-black-color: #000000;
+  --basic-white-color: #ffffff;
+
+  --social-ico-wet-asphalt-color: #212a3a;
+
+  --dark-blue-bg-color: #293449;
+
+  --white-bg-rgba: 255, 255, 255;
+  --light-grey-color-rgba: 197, 197, 197;
+  --very-light-grey-rgba: 169, 169, 169;
+
+  --red-color: #ee3643;
+  --sand-color: #ffd180;
+  --wet-asphalt-color: #32425c;
+  --turquoise-color: #3bbce3;
+  --green-color: #63a63e;
+
+  --dark-sand-color: #ffbf47;
+  --dark-red-color: #ba2732;
+  --dark-wet-asphalt-color: #32425c;
+  --dark-green-color: #518534;
+
+  --darker-blue-color: #161d29;
+  --darker-red-color: #ca2c37;
+
+  --very-darker-red-color: #ba2732;
+
+  --light-grey-color: #a9a9a9;
+  --light-white-color: #f1f5f7;
+  --light-white-color-footer: #f3f7f9;
+  --light-volet-color: #dc91d8;
+  --light-green-color: #8ed78f;
+  --light-sand-color: #ffc047;
+  --light-beige: #f9f5f0;
+  --light-green-color: #5fbb2d;
+
+  --lighter-grey-color: rgba(var(--light-grey-color-rgba), 0.25);
+  --lighter-white-color: rgba(var(--white-bg-rgba), 0.5);
+
+  --very-light-white-color: rgba(var(--white-bg-rgba), 0.5);
+
+  --very-light-grey-color: #c5c5c5;
+  --very-lighter-grey-color: #f1f5f7;
+
+  --very-very-light-grey-color: #eaeaea;
+  --very-very-lighter-grey-color: #f2f6f8;
+
+  --very-very-very-light-grey-color: #e5e5e5;
+}
+
+.container-wrapper {
+  min-height: 100%;
+
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.cursor-default:hover {
+  cursor: default;
+}
+
+.cursor-default {
+  cursor: default;
+}
+
+.content-empty-page {
+  /* класс для "пустых" страниц, которые для наполнения сайта */
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--basic-black-color);
+}
+
+.content-empty-page-wrapper {
+  width: 940px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  outline: 5px solid green; /* временно */
+  outline-offset: -5px; /* временно */
+}
+
+.page {
+  height: 100%;
+}
+
+.container-wrapper {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: var(--basic-white-color);
+  background-color: var(--basic-white-color);
+}
+
+.content {
+  outline: 5px solid black; /* временно */
+  outline-offset: -5px; /* временно */
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.logo-master {
+  background-color: var(--red-color);
+}
+
+.logo-master:hover {
+  cursor: pointer;
+}
+
+.logo-master:active {
+  background-color: var(--dark-red-color);
+}
+
+.btn-nav {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--basic-white-color);
+
+  background-color: var(--red-color);
+}
+
+.btn-nav:hover {
+  cursor: pointer;
+
+  background-color: var(--darker-red-color);
+}
+
+.btn-nav:active {
+  cursor: pointer;
+
+  background-color: var(--very-darker-red-color);
+}
+
+.popular-inner {
+  background-color: var(--light-beige);
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.popular-header {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--wet-asphalt-color);
+}
+
+.navigation-item-link {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+
+.info-card-new-text {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  color: var(--basic-white-color);
+
+  background-color: var(--red-color);
+}
+
+.info-card-new-text-add {
+  color: transparent;
+  background-color: transparent;
+}
+
+.new-ico {
+  background-color: var(--basic-black-color);
+}
+
+.perforator-pic {
+  background-color: var(--basic-black-color);
+}
+/* Общие настройки end */
+/* ---------------------- */
+/*
+  Шапка сайта start
+*/
+
+.head-inner {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  width: 940px;
+  margin: 0 auto;
+
+  outline: 5px solid black; /* временно */
+  outline-offset: -5px; /* временно */
+}
+
+.head-wrapper-left {
+  outline: 6px solid blue; /* временно */
+  outline-offset: -6px; /* временно */
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.logo-master-header {
+  height: fit-content;
+}
+
+.head-wrapper-right {
+  outline: 6px solid brown; /* временно */
+  outline-offset: -6px; /* временно */
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.master-wrapper-head {
+  background-color: var(--dark-blue-bg-color);
+
+  margin-left: auto;
+  margin-right: auto;
+
+  display: grid;
+  width: 100%;
+}
+
+.bookmark-inner {
+  display: flex;
+  align-items: center;
+}
+
+.bookmark-inner:hover {
+  cursor: pointer;
+}
+
+.bookmarks-number:active {
+  background-color: var(--darker-blue-color);
+  color: var(--lighter-white-color);
+}
+
+.basket-inner {
+  display: flex;
+  align-items: center;
+}
+
+.basket-inner:hover {
+  cursor: pointer;
+}
+
+.basket:active {
+  color: var(--lighter-white-color);
+}
+
+.basket-add-background-color {
+  background-color: var(--red-color);
+}
+
+.general-style-header {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--basic-white-color);
+}
+
+.order-registration {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--basic-white-color);
+
+  background-color: var(--green-color);
+
+  height: fit-content;
+}
+
+.order-registration:hover {
+  cursor: pointer;
+
+  background-color: var(--light-green-color);
+}
+
+.order-registration:active {
+  color: var(--lighter-white-color);
+
+  background-color: var(--green-color);
+}
+
+/*
+  Шапка сайта end
+*/
+/* ---------------------- */
+/*
+  Блок с навигацией и информацией для пользователя start
+*/
+
+.master-wrapper-info-and-nav {
+  background-color: var(--very-lighter-grey-color);
+}
+
+/* Информация для пользователя end */
+.info-for-user-inner {
+  display: grid;
+  grid-template-columns: 1fr  max-content;
+  width: 940px;
+  margin: 0 auto;
+
+  outline: 5px solid red; /* временно */
+  outline-offset: -5px; /* временно */
+}
+
+.contacts-inner {
+  outline: 7px solid green; /* временно */
+  outline-offset: -7px; /* временно */
+
+  display: grid;
+  grid-template-columns: 1fr max-content;
+}
+
+.brief-description {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--red-color);
+}
+
+.contacts-of-technomart {
+  outline: 9px solid blue; /* временно */
+  outline-offset: -9px; /* временно */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacts-of-technomart:hover {
+  cursor: pointer;
+}
+
+.contacts-of-technomart-container {
+  display: flex;
+  align-items: center;
+}
+
+.login-and-register-inner {
+  outline: 9px solid brown; /* временно */
+  outline-offset: -9px; /* временно */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.telephone-of-technomart {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--red-color);
+}
+
+.address-of-technomart {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  color: var(--wet-asphalt-color);
+}
+
+.sign-in-btn {
+  display: flex;
+  align-items: center;
+}
+
+.logined-user {
+  background-color: var(--very-light-white-color);
+}
+
+.logined-user-link {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--basic-black-color);
+}
+
+.logined-user-link:hover {
+  color: var(--basic-black-color);
+}
+
+.logined-user-link:active {
+  color: var(--very-light-grey-color);
+}
+
+.logined-user-button {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  color: var(--basic-black-color);
+}
+
+.logined-user-orders,
+.logined-user-account {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  color: var(--wet-asphalt-color);
+}
+
+.logined-user-orders:hover,
+.logined-user-account:hover,
+.logined-user-item-marker:hover {
+  color: var(--red-color);
+}
+
+.logined-user-orders:active,
+.logined-user-account:active,
+.logined-user-item-marker:active {
+  color: var(--very-light-grey-color);
+}
+
+.navigation-logined-user {
+  list-style: none;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  padding-left: 0;
+}
+
+.logined-user-item-marker {
+  display: block;
+  width: 6px;
+  height: 7px;
+  background: linear-gradient(0deg, var(--dark-wet-asphalt-color), var(--dark-wet-asphalt-color)),
+    var(--basic-black-color);
+  border-radius: 50%;
+
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.button-user {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  color: var(--basic-black-color);
+
+  background-color: var(--light-white-bg);
+}
+
+.button-user:hover {
+  cursor: pointer;
+
+  color: var(--red-color);
+}
+
+.button-user:active {
+  color: var(--very-light-grey-color);
+}
+/* Информация для пользователя end */
+
+/* Навигация start */
+.master-nav-inner {
+  background-color: var(--wet-asphalt-color);
+
+  margin: 0 auto;
+  max-width: 940px;
+}
+
+.nav-items {
+  list-style: none;
+
+  display: flex;
+  justify-content: space-between;
+
+  width: 940px;
+
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+
+  padding-left: 0;
+
+  outline: 5px solid brown; /* временно */
+  outline-offset: -5px; /* временно */
+}
+
+.navigation-item:hover {
+  cursor: pointer;
+  background-color: var(--dark-blue-bg-color);
+}
+
+.navigation-item:active {
+  background-color: var(--dark-blue-bg-color);
+  color: var(--basic-white-color);
+}
+
+.navigation-item-link-main {
+  text-align: center;
+  color: var(--basic-white-color);
+}
+
+.navigation-item-link-main:active {
+  color: var(--basic-white-color);
+  opacity: 0.5;
+}
+/* Навигация end */
+
+/*
+  Блок с навигацией и информацией для пользователя end
+*/
+/* ---------------------- */
+/*
+  Блок с товарами и акциями start
+*/
+
+.products-and-promotions-wrapper {
+  display: grid;
+
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 30px;
+  margin-left: auto;
+
+  max-width: 940px;
+
+  outline: 7px solid crimson; /* временно */
+  outline-offset: -7px; /* временно */
+}
+
+.products-and-promotions {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-blocks-top {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start;
+
+  margin-bottom: 20px;
+}
+
+.info-card-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  width: calc(100% / 3.1333);
+}
+
+.info-card-wrapper-special {
+  flex-direction: column;
+}
+
+.info-card-header-general-style {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--basic-white-color);
+}
+
+.info-card-link-general-style {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--basic-white-color);
+
+  background-color: rgba(var(--white-bg-rgba), 0.5);
+}
+
+.info-card-link-general-style:hover {
+  background-color: rgba(var(--light-grey-color-rgba), 0.3);
+}
+
+.info-card-link-general-style:active {
+  background-color: rgba(var(--very-light-grey-rgba), 0.3);
+}
+
+.info-card-link-bg:hover {
+  cursor: pointer;
+}
+
+.info-blocks-slide-blocks {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Материалы start */
+.info-card-materials {
+  background-color: var(--dark-sand-color);
+
+  margin-right: 20px;
+}
+
+.info-card-right {
+  display: flex;
+}
+/* Материалы end */
+
+/* Инструмент start */
+.info-card-tools {
+  background-color: var(--turquoise-color);
+
+  margin-right: 20px;
+}
+/* Инструмент end */
+
+/* Техника start */
+.info-card-technics {
+  background-color: var(--light-volet-color);
+}
+/* Техника end */
+
+/* Слайдер start */
+/* Слайд 1 start */
+.slider-info-blocks {
+  background-color: var(--basic-black-color);
+}
+
+.slide-wrapper {
+  min-width: 620px;
+  min-height: 255px;
+
+  background-image: url("../img/wocker-bg.jpg");
+}
+
+.slide-inner-add {
+  background-color: var(--lighter-grey-color);
+}
+
+.slide-header {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  color: var(--basic-white-color);
+
+  margin-top: 0;
+}
+
+.slide-add-header {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 36px;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--basic-white-color);
+}
+
+.slider-perforators {
+  margin: 0;
+  padding: 0;
+}
+
+.slide-arrows {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.slide-arrows:hover {
+  cursor: pointer;
+}
+/* Слайд 1 end */
+/* Слайдер end */
+
+/* Скидки 50% start */
+.info-card-discounts {
+  background-color: var(--light-green-color);
+
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+/* Скидки 50% end */
+
+/* Доставка start */
+.info-card-delivery {
+  background-color: var(--light-sand-color);
+
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+
+  margin-left: 20px;
+}
+/* Доставка end */
+
+/*
+  Блок с товарами и акциями end
+*/
+/* ---------------------- */
+/*
+   Блок с популяярными товарами start
+*/
+
+.popular-product {
+  width: 940px;
+
+  margin-top: -30px;
+  margin-left: auto;
+  margin-right: auto;
+
+  outline: 7px solid violet; /* временно */
+  outline-offset: -7px; /* временно */
+}
+
+.popular-product-wrapper {
+  outline: 9px solid cadetblue; /* временно */
+  outline-offset: -9px; /* временно */
+}
+
+.product-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr max-content;
+
+  padding-left: 0;
+
+  outline: 9px solid rebeccapurple; /* временно */
+  outline-offset: -9px; /* временно */
+}
+
+.product-items-catalog {
+  display: grid;
+  grid-template-columns: 1fr 1fr max-content;
+
+  list-style: none;
+
+  padding-left: 0;
+
+  outline: 9px solid rebeccapurple; /* временно */
+  outline-offset: -9px; /* временно */
+}
+
+.item-header {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  color: var(--basic-black-color);
+}
+
+.item-price {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  color: var(--light-grey-color);
+}
+
+.product-button {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  color: var(--basic-white-color);
+
+  background-color: var(--red-color);
+}
+
+.product-button:hover {
+  cursor: pointer;
+
+  background-color: var(--darker-red-color);
+}
+
+.product-button:active {
+  cursor: pointer;
+
+  background-color: var(--very-darker-red-color);
+}
+
+.product-button-hover {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--basic-white-color);
+
+  background-color: var(--green-color);
+}
+
+.product-button-hover:hover {
+  background-color: var(--light-green-color);
+
+  cursor: pointer;
+}
+
+.product-button-hover:active {
+  background-color: var(--dark-green-color);
+}
+
+.product-button-boomarks {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--wet-asphalt-color);
+
+  background-color: transparent;
+
+  border: 3px solid var(--green-color);
+}
+
+.product-button-boomarks:hover {
+  cursor: pointer;
+
+  border: 3px solid var(--wet-asphalt-color);
+}
+
+.product-button-boomarks:active {
+  opacity: 0.5;
+}
+/*
+   Блок с популяярными товарами end
+*/
+/* ---------------------- */
+/*
+  Блок с популяярными производителями start
+*/
+
+.popular-manufacturer-wrapper {
+  width: 940px;
+
+  margin-top: -30px;
+  margin-left: auto;
+  margin-right: auto;
+
+  outline: 7px solid darkblue; /* временно */
+  outline-offset: -7px; /* временно */
+}
+
+.popular-wrapper {
+  outline: 7px solid wheat; /* временно */
+  outline-offset: -7px; /* временно */
+}
+
+.manufacturer-items {
+  list-style: none;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr max-content;
+
+  padding-left: 0;
+
+  outline: 9px solid hotpink; /* временно */
+  outline-offset: -9px; /* временно */
+}
+
+.manufacturer-link {
+  border: 1px solid var(--very-very-light-grey-color);
+}
+
+.manufacturer-link:hover {
+  border: 1px solid var(--very-very-light-grey-color);
+
+  box-shadow: 0 0 10px var(--light-grey-color);
+}
+
+.manufacturer-link:active {
+  box-shadow: 0 0 10px var(--very-light-grey-color);
+}
+
+.manufacturer-pic {
+  background-color: var(--basic-black-color);
+}
+
+/*
+   Блок с популяярными производителями end
+*/
+/* ---------------------- */
+/*
+  Блок с сервисами start
+*/
+
+.services-wrapper {
+  margin-top: -25px;
+
+  background-color: var(--light-white-color);
+}
+
+.services-inner {
+  width: 940px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  outline: 5px solid hotpink; /* временно */
+  outline-offset: -5px; /* временно */
+}
+
+.services-slider-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr max-content;
+
+  outline: 7px solid red; /* временно */
+  outline-offset: -7px; /* временно */
+}
+
+.slider-nav {
+  border-right: 2px solid grey;
+}
+
+.services-header {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  color: var(--basic-black-color);
+}
+
+.services-info {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--basic-black-color);
+}
+/* Слайдер start */
+/* Навигация по слайдеру start */
+.name-of-services {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--basic-black-color);
+
+  background-color: var(--wet-asphalt-color);
+}
+
+.name-of-services-active:hover,
+.name-of-services:hover {
+  color: var(--basic-white-color);
+
+  background-color: var(--dark-blue-bg-color);
+  cursor: pointer;
+}
+
+.name-of-services-active {
+  color: var(--dark-wet-asphalt-color);
+
+  background-color: var(--basic-white-color);
+}
+/* Навигация по слайдеру end */
+/* Слайд 1 start */
+.services-slide-header {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  color: var(--wet-asphalt-color);
+}
+
+.services-slide-info-descr {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--basic-black-color);
+}
+/* Слайд 1 end */
+/* Слайдер end */
+
+/*
+  Блок с сервисами end
+*/
+/* ---------------------- */
+/*
+  Блок с информацией о транспортных компаниях и контактами Техномарт start
+*/
+
+.tc-and-contacts-container {
+  display: grid;
+
+  grid-template-columns: 1fr max-content;
+
+  width: 940px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  outline: 5px solid darkgoldenrod; /* временно */
+  outline-offset: -5px; /* временно */
+}
+
+.tc-wrapper {
+  outline: 7px solid red; /* временно */
+  outline-offset: -7px; /* временно */
+}
+
+.tc-and-contacts-header-general {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  color: var(--basic-black-color);
+}
+
+.partners-items {
+  list-style: none;
+}
+
+.tc-and-contacts-info-general {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--basic-black-color);
+}
+
+.item-partner-header {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--basic-black-color);
+}
+
+.item-partner {
+  display: flex;
+}
+
+.marker {
+  padding-right: 5px;
+}
+
+.contacts-wrapper {
+  outline: 7px solid burlywood; /* временно */
+  outline-offset: -7px; /* временно */
+
+  display: flex;
+  flex-direction: column;
+}
+
+/*
+  Блок с информацией о транспортных компаниях и контактами Техномарт end
+*/
+/* ---------------------- */
+/*
+  Подвал сайта start
+*/
+
+/* Первый блок подвала сайта start */
+.one-block-wrapper {
+  background-color: var(--wet-asphalt-color);
+}
+
+.one-block-container {
+  width: 940px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav-master-footer {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+}
+
+.two-block-nav-master {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+
+  outline: 7px solid darkgoldenrod; /* временно */
+  outline-offset: -7px; /* временно */
+
+  width: 940px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contacts-inner-footer-secondary-one {
+  outline: 9px solid tomato; /* временно */
+  outline-offset: -9px; /* временно */
+}
+
+.nav-items-footer-one,
+.nav-items-footer-secondary-one {
+  width: auto;
+}
+
+.two-block-wrapper {
+  background-color: var(--dark-blue-bg-color);
+}
+
+.navigation-item-link-footer-main-one {
+  color: var(--light-white-color);
+}
+
+.navigation-item-link-footer-main-one:hover,
+.navigation-item-link-footer-secondary-one:hover {
+  text-decoration: underline;
+}
+
+.navigation-item-link-footer-main-one:active,
+.navigation-item-link-footer-secondary-one:active {
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+.navigation-item-footer-main-one:hover,
+.item-footer-secondary-one:hover {
+  background-color: transparent;
+}
+
+.navigation-item-link-footer-secondary-one {
+  color: var(--sand-color);
+}
+
+.address-telephone-footer-secondary-one {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--light-white-color-footer);
+}
+/* Первый блок подвала сайта end */
+
+/* Второй блок подвала сайта start */
+.two-block-inner {
+  width: 940px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr max-content;
+
+  outline: 7px solid hotpink; /* временно */
+  outline-offset: -7px; /* временно */
+}
+
+.copyright-technomart,
+.copyright-security,
+.feedback,
+.developed {
+  color: var(--basic-white-color);
+}
+
+.copyright {
+  outline: 9px solid green; /* временно */
+  outline-offset: -9px; /* временно */
+}
+
+.social-contacts {
+  outline: 9px solid red; /* временно */
+  outline-offset: -9px; /* временно */
+}
+
+.contacts-mail-site {
+  outline: 9px solid brown; /* временно */
+  outline-offset: -9px; /* временно */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feedback-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.two-block-basic {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.social-contacts-items {
+  list-style: none;
+
+  padding-left: 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.social-ico {
+  background-color: var(--social-ico-wet-asphalt-color);
+
+  border-radius: 50%;
+
+  color: white; /* если не прогрузится иконка */
+}
+
+.social-ico:hover {
+  background-color: var(--red-color);
+}
+
+.social-ico:active {
+  background-color: var(--red-color);
+}
+
+.developer-mail-link {
+  padding-right: 5px;
+}
+
+.developer-mail-link,
+.developer-link {
+  color: var(--sand-color);
+}
+
+.developer-mail-link:hover,
+.developer-link:hover {
+  border-bottom: 1px solid var(--sand-color);
+}
+
+.developer-mail-link:active,
+.developer-link:active {
+  border-bottom: none;
+  color: var(--red-color);
+}
+/* Второй блок подвала сайта end */
+/*
+  Подвал сайта end
+*/
+/* ---------------------- */
+/*
+  Каталог сайта start
+*/
+
+.catalog-technomart {
+  width: 940px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  outline: 5px solid gold; /* временно */
+  outline-offset: -5px; /* временно */
+}
+
+.bread-crumbs {
+  list-style: none;
+
+  padding-left: 0;
+
+  outline: 5px solid green; /* временно */
+  outline-offset: -5px; /* временно */
+
+  display: flex;
+  align-items: center;
+}
+
+.item-bread-crumb {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--basic-black-color);
+}
+
+.perforators-header {
+  background-color: var(--very-very-lighter-grey-color);
+
+  outline: 5px solid red; /* временно */
+  outline-offset: -5px; /* временно */
+}
+
+.perforators-header h2 {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  color: var(--wet-asphalt-color);
+}
+
+.pagin {
+  list-style: none;
+
+  padding-left: 0;
+
+  outline: 5px solid sandybrown; /* временно */
+  outline-offset: -5px; /* временно */
+}
+
+.pagin-items {
+  background-color: var(--basic-white-color);
+  border: 1px solid var(--very-very-very-light-grey-color);
+}
+
+.pagin-items:active {
+  border: 1px solid var(--red-color);
+}
+
+.pagin-items:hover {
+  cursor: pointer;
+}
+
+.pagin-item-link {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  color: var(--basic-black-color);
+}
+
+.pagin-item-link-active {
+  background-color: var(--red-color);
+  color: var(--basic-white-color);
+}
+
+.pagin-item-link-active:hover {
+  cursor: default;
+}
+
+.about-perforators-wrapper {
+  background-color: var(--light-white-color);
+}
+
+.about-perforators {
+  width: 940px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  outline: 5px solid blue; /* временно */
+  outline-offset: -5px; /* временно */
+}
+
+.about-perforators-header {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  color: var(--basic-black-color);
+}
+
+.about-perforators-article {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--basic-black-color);
+}
+
+/*
+  Каталог сайта end
+*/
+/* ---------------------- */
+/*
+  sticky footer start
+*/
+
+.sticky-footer-top {
+  width: 100%;
+  height: 1005;
+}
+
+@media screen and (max-width: 1199px) {
+  .sticky-footer-top {
+    width: 100%;
+    height: calc(123vh - 5px);
+  }
+}
+
+.sticky-footer-body {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.sticky-footer-content {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.sticky-footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/*
+  sticky footer end
+*/
