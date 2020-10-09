@@ -35,8 +35,7 @@
       </div>
       <div class="head-wrapper-right">
         <div class="bookmark-inner bookmarks-number" tabindex="0">
-          <img class="bookmark-ico" src="img/boomark-ico.svg" width="14" height="15.58"
-            alt="Иконка закладки">
+          <img class="bookmark-ico" src="img/boomark-ico.svg" width="14" height="15.58" alt="Иконка закладки">
           <p class="bookmarks bookmarks-number general-style-header">
             Закладки: 0
           </p>
@@ -72,9 +71,10 @@
           Контакты
         </h2>
         <address class="contacts-of-technomart">
-          <img class="phone-ico" src="img/phone-ico.svg" width="17.51" height="18.97"
-            alt="Иконка трубки телефона">
-          <a class="telephone-of-tecnomart" href="tel:78125550555">+7 (812) 555-05-55</a>
+          <div class="contacts-of-technomart-container">
+            <img class="phone-ico" src="img/phone-ico.svg" width="17.51" height="18.97" alt="Иконка трубки телефона">
+            <a class="telephone-of-technomart" href="tel:78125550555">+7 (812) 555-05-55</a>
+          </div>
           <p class="address-of-technomart">
             г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
           </p>
@@ -165,8 +165,7 @@
       <ul class="bread-crumbs">
         <li class="bread-crumbs-items">
           <a class="item-bread-crumb" href="index.html">
-            <img src="img/home-ico-catalog.svg" width="13.98" height="12"
-              alt="Иконка ссылки на Главную страницу сайта">
+            <img src="img/home-ico-catalog.svg" width="13.98" height="12" alt="Иконка ссылки на Главную страницу сайта">
           </a>
         </li>
         <li class="bread-crumbs-items">
@@ -735,23 +734,28 @@
           <ul class="social-contacts-items">
             <li class="item-social-contact">
               <a class="social-contact-link social-contact-vk" href="#">
-                Вконтакте
-                <img class="social-ico ico-vk map-pic" src="img/vk-ico.svg" width="44"
-                  height="44" alt="иконка Вконтакте">
+                <p class="visually-hidden">
+                  Вконтакте
+                </p>
+                <img class="social-ico ico-vk map-pic" src="img/vk-ico.svg" width="44" height="44"
+                  alt="иконка Вконтакте">
               </a>
             </li>
             <li class="item-social-contact">
               <a class="social-contact-link social-contact-fb" href="#">
-                Фейсбук
-                <img class="social-ico ico-fb map-pic" src="img/fb-ico.svg" width="44"
-                height="44" alt="иконка Фейсбук">
+                <p class="visually-hidden">
+                  Фейсбук
+                </p>
+                <img class="social-ico ico-fb map-pic" src="img/fb-ico.svg" width="44" height="44" alt="иконка Фейсбук">
               </a>
             </li>
             <li class="item-social-contact">
               <a class="social-contact-link social-contact-inst" href="#">
-                Инстаграм
-                <img class="social-ico ico-inst map-pic" src="img/inst-ico.svg" width="44"
-                height="44" alt="иконка Инстаграм">
+                <p class="visually-hidden">
+                  Инстаграм
+                </p>
+                <img class="social-ico ico-inst map-pic" src="img/inst-ico.svg" width="44" height="44"
+                  alt="иконка Инстаграм">
               </a>
             </li>
           </ul>
@@ -761,20 +765,24 @@
           <h2 class="visually-hidden">
             Обратная связь с компанией-разработчиком
           </h2>
-          <p class="feedback two-block-basic">
-            Обратная связь:
-          </p>
-          <address class="developer-mail">
-            <a class="developer-mail-link two-block-basic" href="mailto:mail@htmlacademy.ru">
-              mail@htmlacademy.ru
-            </a>
-          </address>
-          <p class="developed two-block-basic">
-            Разработано —
+          <div class="feedback-container">
+            <p class="feedback two-block-basic">
+              Обратная связь:
+            </p>
+            <address class="developer-mail">
+              <a class="developer-mail-link two-block-basic" href="mailto:mail@htmlacademy.ru">
+                mail@htmlacademy.ru
+              </a>
+            </address>
+          </div>
+          <div class="feedback-container">
+            <p class="developed two-block-basic">
+              Разработано —
+            </p>
             <a class="developer-link two-block-basic" href="https://htmlacademy.ru/intensive/htmlcss">
               htmlacademy.ru
             </a>
-          </p>
+          </div>
         </section>
       </div>
     </div>
