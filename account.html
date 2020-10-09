@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html class="page sticky-footer-top" lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="container-wrapper">
+<body class="container-wrapper sticky-footer-body">
   <!-- Шапка сайта start -->
   <header class="master-wrapper-head">
     <h2 class="visually-hidden">
@@ -35,15 +35,13 @@
       </div>
       <div class="head-wrapper-right">
         <div class="bookmark-inner bookmarks-number" tabindex="0">
-          <img class="bookmark-ico" src="https://via.placeholder.com/150x100" width="150" height="100"
-            alt="Иконка закладки">
+          <img class="bookmark-ico" src="img/boomark-ico.svg" width="14" height="15.58" alt="Иконка закладки">
           <p class="bookmarks bookmarks-number general-style-header">
             Закладки: 0
           </p>
         </div>
         <div class="basket-inner basket-add-background-color" tabindex="0">
-          <img class="basket-ico" src="https://via.placeholder.com/150x100" width="150" height="100"
-            alt="Иконка корзины">
+          <img class="basket-ico" src="img/basket-ico.svg" width="15" height="11" alt="Иконка корзины">
           <p class="basket general-style-header">
             Корзина: 10
           </p>
@@ -73,9 +71,10 @@
           Контакты
         </h2>
         <address class="contacts-of-technomart">
-          <img class="phone-ico" src="https://via.placeholder.com/150x100" width="150" height="100"
-            alt="Иконка трубки телефона">
-          <a class="telephone-of-tecnomart" href="tel:78125550555">+7 (812) 555-05-55</a>
+          <div class="contacts-of-technomart-container">
+            <img class="phone-ico" src="img/phone-ico.svg" width="17.51" height="18.97" alt="Иконка трубки телефона">
+            <a class="telephone-of-technomart" href="tel:78125550555">+7 (812) 555-05-55</a>
+          </div>
           <p class="address-of-technomart">
             г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
           </p>
@@ -86,12 +85,12 @@
           </h2>
           <div class="logined-user">
             <a class="logined-user-link" href="blank.html">
-              <img class="logined-user-ico" src="https://via.placeholder.com/150x100" width="150" height="100"
+              <img class="logined-user-ico" src="img/logined-user-ico.svg" width="20" height="18"
                 alt="Иконка кнопки пользователя">
               Равшан Джамшутович
             </a>
             <a class="logined-user-button" href="index.html">
-              <img class="logined-user-exit-ico" src="https://via.placeholder.com/150x100" width="150" height="100"
+              <img class="logined-user-exit-ico" src="img/exit-ico.svg" width="20" height="17"
                 alt="Иконка кнопки Выход">
             </a>
           </div>
@@ -102,8 +101,8 @@
               </a>
             </li>
             <li class="navigation-logined-user-item logined-user-item-marker"></li>
-            <li class="navigation-logined-user-item cursor-default">
-              <a class="logined-user-account cursor-default">
+            <li class="navigation-logined-user-item">
+              <a class="logined-user-account" href="account.html">
                 Личный кабинет
               </a>
             </li>
@@ -160,7 +159,7 @@
   <!-- Навигация end -->
   <!-- Блок с навигацией и информацией для пользователя end -->
 
-  <main class="content">
+  <main class="content sticky-footer-content">
     <!-- Страница Личного кабинета пользователя магазина Техномарт start -->
     <div class="content-empty-page-wrapper">
       <h1 class="content-empty-page">
@@ -171,7 +170,7 @@
   </main>
 
   <!-- Подвал сайта start -->
-  <footer class="info-tech">
+  <footer class="info-tech sticky-footer">
     <h2 class="visually-hidden">
       Контакты и навигация в подвале сайта магазина Техномарт
     </h2>
@@ -184,8 +183,8 @@
               Контакты
             </h2>
             <a href="index.html" class="logo-master logo-master-footer" tabindex="0">
-              <img class="logo-master logo-master-header" src="img/logo-technomart.svg" width="108"
-              height="18" alt="Логотип магазина Техномарт">
+              <img class="logo-master logo-master-header" src="img/logo-technomart.svg" width="108" height="18"
+                alt="Логотип магазина Техномарт">
             </a>
             <nav class="nav-items-footer-main-one">
               <ul class="nav-items nav-items-footer-one">
@@ -263,7 +262,7 @@
             </ul>
           </nav>
         </div>
-        </div>
+      </div>
     </div>
     <!-- Первый блок подвала сайта end -->
     <!-- - -->
@@ -289,23 +288,28 @@
           <ul class="social-contacts-items">
             <li class="item-social-contact">
               <a class="social-contact-link social-contact-vk" href="#">
-                Вконтакте
-                <img class="social-ico ico-vk map-pic" src="https://via.placeholder.com/150x100" width="150"
-                  height="100" alt="иконка Вконтакте">
+                <p class="visually-hidden">
+                  Вконтакте
+                </p>
+                <img class="social-ico ico-vk map-pic" src="img/vk-ico.svg" width="44" height="44"
+                  alt="иконка Вконтакте">
               </a>
             </li>
             <li class="item-social-contact">
               <a class="social-contact-link social-contact-fb" href="#">
-                Фейсбук
-                <img class="social-ico ico-fb map-pic" src="https://via.placeholder.com/150x100" width="150"
-                  height="100" alt="иконка Фейсбук">
+                <p class="visually-hidden">
+                  Фейсбук
+                </p>
+                <img class="social-ico ico-fb map-pic" src="img/fb-ico.svg" width="44" height="44" alt="иконка Фейсбук">
               </a>
             </li>
             <li class="item-social-contact">
               <a class="social-contact-link social-contact-inst" href="#">
-                Инстаграм
-                <img class="social-ico ico-inst map-pic" src="https://via.placeholder.com/150x100" width="150"
-                  height="100" alt="иконка Инстаграм">
+                <p class="visually-hidden">
+                  Инстаграм
+                </p>
+                <img class="social-ico ico-inst map-pic" src="img/inst-ico.svg" width="44" height="44"
+                  alt="иконка Инстаграм">
               </a>
             </li>
           </ul>
@@ -315,20 +319,24 @@
           <h2 class="visually-hidden">
             Обратная связь с компанией-разработчиком
           </h2>
-          <p class="feedback two-block-basic">
-            Обратная связь:
-          </p>
-          <address class="developer-mail">
-            <a class="developer-mail-link two-block-basic" href="mailto:mail@htmlacademy.ru">
-              mail@htmlacademy.ru
-            </a>
-          </address>
-          <p class="developed two-block-basic">
-            Разработано:
+          <div class="feedback-container">
+            <p class="feedback two-block-basic">
+              Обратная связь:
+            </p>
+            <address class="developer-mail">
+              <a class="developer-mail-link two-block-basic" href="mailto:mail@htmlacademy.ru">
+                mail@htmlacademy.ru
+              </a>
+            </address>
+          </div>
+          <div class="feedback-container">
+            <p class="developed two-block-basic">
+              Разработано —
+            </p>
             <a class="developer-link two-block-basic" href="https://htmlacademy.ru/intensive/htmlcss">
               htmlacademy.ru
             </a>
-          </p>
+          </div>
         </section>
       </div>
     </div>
