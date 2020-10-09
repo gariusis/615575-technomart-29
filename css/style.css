@@ -11,6 +11,8 @@
   --basic-black-color: #000000;
   --basic-white-color: #ffffff;
 
+  --social-ico-wet-asphalt-color: #212a3a;
+
   --dark-blue-bg-color: #293449;
 
   --white-bg-rgba: 255, 255, 255;
@@ -18,42 +20,42 @@
   --very-light-grey-rgba: 169, 169, 169;
 
   --red-color: #ee3643;
-  --sand-color: #FFD180;
+  --sand-color: #ffd180;
   --wet-asphalt-color: #32425c;
-  --turquoise-color: #3BBCE3;
-  --green-color: #63A63E;
+  --turquoise-color: #3bbce3;
+  --green-color: #63a63e;
 
-  --dark-sand-color: #FFBF47;
-  --dark-red-color: #BA2732;
-  --dark-wet-asphalt-color: #32425C;
+  --dark-sand-color: #ffbf47;
+  --dark-red-color: #ba2732;
+  --dark-wet-asphalt-color: #32425c;
   --dark-green-color: #518534;
 
-  --darker-blue-color: #161D29;
-  --darker-red-color: #CA2C37;
+  --darker-blue-color: #161d29;
+  --darker-red-color: #ca2c37;
 
-  --very-darker-red-color: #BA2732;
+  --very-darker-red-color: #ba2732;
 
-  --light-grey-color: #A9A9A9;
-  --light-white-color: #F1F5F7;
-  --light-white-color-footer: #F3F7F9;
-  --light-volet-color: #DC91D8;
-  --light-green-color: #8ED78F;
-  --light-sand-color: #FFC047;
-  --light-beige: #F9F5F0;
-  --light-green-color: #5FBB2D;
+  --light-grey-color: #a9a9a9;
+  --light-white-color: #f1f5f7;
+  --light-white-color-footer: #f3f7f9;
+  --light-volet-color: #dc91d8;
+  --light-green-color: #8ed78f;
+  --light-sand-color: #ffc047;
+  --light-beige: #f9f5f0;
+  --light-green-color: #5fbb2d;
 
   --lighter-grey-color: rgba(var(--light-grey-color-rgba), 0.25);
   --lighter-white-color: rgba(var(--white-bg-rgba), 0.5);
 
   --very-light-white-color: rgba(var(--white-bg-rgba), 0.5);
 
-  --very-light-grey-color: #C5C5C5;
-  --very-lighter-grey-color: #F1F5F7;
+  --very-light-grey-color: #c5c5c5;
+  --very-lighter-grey-color: #f1f5f7;
 
-  --very-very-light-grey-color: #EAEAEA;
-  --very-very-lighter-grey-color: #F2F6F8;
+  --very-very-light-grey-color: #eaeaea;
+  --very-very-lighter-grey-color: #f2f6f8;
 
-  --very-very-very-light-grey-color: #E5E5E5;
+  --very-very-very-light-grey-color: #e5e5e5;
 }
 
 .container-wrapper {
@@ -76,7 +78,8 @@
   cursor: default;
 }
 
-.content-empty-page { /* класс для "пустых" страниц, которые для наполнения сайта */
+.content-empty-page {
+  /* класс для "пустых" страниц, которые для наполнения сайта */
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   line-height: 30px;
@@ -164,6 +167,13 @@ img {
   background-color: var(--very-darker-red-color);
 }
 
+.popular-inner {
+  background-color: var(--light-beige);
+
+  display: flex;
+  justify-content: space-between;
+}
+
 .popular-header {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
@@ -180,10 +190,6 @@ img {
   font-weight: 400;
   font-style: normal;
   text-align: center;
-}
-
-.popular-inner {
-  background-color: var( --light-beige);
 }
 
 .info-card-new-text {
@@ -229,11 +235,23 @@ img {
 .head-wrapper-left {
   outline: 6px solid blue; /* временно */
   outline-offset: -6px; /* временно */
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.logo-master-header {
+  height: fit-content;
 }
 
 .head-wrapper-right {
   outline: 6px solid brown; /* временно */
   outline-offset: -6px; /* временно */
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .master-wrapper-head {
@@ -246,6 +264,11 @@ img {
   width: 100%;
 }
 
+.bookmark-inner {
+  display: flex;
+  align-items: center;
+}
+
 .bookmark-inner:hover {
   cursor: pointer;
 }
@@ -253,6 +276,11 @@ img {
 .bookmarks-number:active {
   background-color: var(--darker-blue-color);
   color: var(--lighter-white-color);
+}
+
+.basket-inner {
+  display: flex;
+  align-items: center;
 }
 
 .basket-inner:hover {
@@ -285,6 +313,8 @@ img {
   color: var(--basic-white-color);
 
   background-color: var(--green-color);
+
+  height: fit-content;
 }
 
 .order-registration:hover {
@@ -314,7 +344,7 @@ img {
 /* Информация для пользователя end */
 .info-for-user-inner {
   display: grid;
-  grid-template-columns:1fr max-content;
+  grid-template-columns: 1fr max-content;
   width: 940px;
   margin: 0 auto;
 
@@ -342,18 +372,31 @@ img {
 .contacts-of-technomart {
   outline: 9px solid blue; /* временно */
   outline-offset: -9px; /* временно */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .contacts-of-technomart:hover {
   cursor: pointer;
 }
 
+.contacts-of-technomart-container {
+  display: flex;
+  align-items: center;
+}
+
 .login-and-register-inner {
   outline: 9px solid brown; /* временно */
   outline-offset: -9px; /* временно */
+
+  display: flex;
+  align-items: center;
 }
 
-.telephone-of-tecnomart {
+.telephone-of-technomart {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 21px;
   line-height: 30px;
@@ -370,6 +413,11 @@ img {
   font-style: normal;
   text-align: center;
   color: var(--wet-asphalt-color);
+}
+
+.sign-in-btn {
+  display: flex;
+  align-items: center;
 }
 
 .logined-user {
@@ -432,9 +480,10 @@ img {
 
 .logined-user-item-marker {
   display: block;
-  Width: 6px;
-  Height: 7px;
-  background: linear-gradient(0deg, var(--dark-wet-asphalt-color), var(--dark-wet-asphalt-color)), var(--basic-black-color);
+  width: 6px;
+  height: 7px;
+  background: linear-gradient(0deg, var(--dark-wet-asphalt-color), var(--dark-wet-asphalt-color)),
+    var(--basic-black-color);
   border-radius: 50%;
 }
 
@@ -447,7 +496,7 @@ img {
   text-align: center;
   color: var(--basic-black-color);
 
-  background-color: var( --light-white-bg);
+  background-color: var(--light-white-bg);
 }
 
 .button-user:hover {
@@ -472,6 +521,9 @@ img {
 .nav-items {
   list-style: none;
 
+  display: flex;
+  justify-content: space-between;
+
   width: 940px;
 
   margin-top: 0;
@@ -490,7 +542,7 @@ img {
   background-color: var(--dark-blue-bg-color);
 }
 
-.navigation-item:active  {
+.navigation-item:active {
   background-color: var(--dark-blue-bg-color);
   color: var(--basic-white-color);
 }
@@ -517,11 +569,40 @@ img {
 .products-and-promotions-wrapper {
   display: grid;
 
-  margin: 0 auto;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 30px;
+  margin-left: auto;
+
   max-width: 940px;
 
   outline: 7px solid crimson; /* временно */
   outline-offset: -7px; /* временно */
+}
+
+.products-and-promotions {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-blocks-top {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start;
+
+  margin-bottom: 20px;
+}
+
+.info-card-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  width: calc(100% / 3.1333);
+}
+
+.info-card-wrapper-special {
+  flex-direction: column;
 }
 
 .info-card-header-general-style {
@@ -558,15 +639,28 @@ img {
   cursor: pointer;
 }
 
+.info-blocks-slide-blocks {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 /* Материалы start */
 .info-card-materials {
   background-color: var(--dark-sand-color);
+
+  margin-right: 20px;
+}
+
+.info-card-right {
+  display: flex;
 }
 /* Материалы end */
 
 /* Инструмент start */
 .info-card-tools {
   background-color: var(--turquoise-color);
+
+  margin-right: 20px;
 }
 /* Инструмент end */
 
@@ -582,9 +676,17 @@ img {
   background-color: var(--basic-black-color);
 }
 
+.slide-wrapper {
+  min-width: 620px;
+  min-height: 255px;
+
+  background-image: url("../img/wocker-bg.jpg");
+}
+
 .slide-inner-add {
   background-color: var(--lighter-grey-color);
 }
+
 .slide-header {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 36px;
@@ -593,6 +695,8 @@ img {
   font-style: normal;
   text-transform: uppercase;
   color: var(--basic-white-color);
+
+  margin-top: 0;
 }
 
 .slide-add-header {
@@ -608,18 +712,43 @@ img {
   margin: 0;
   padding: 0;
 }
+
+.slide-arrows {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.slide-arrows:hover {
+  cursor: pointer;
+}
 /* Слайд 1 end */
 /* Слайдер end */
 
 /* Скидки 50% start */
 .info-card-discounts {
   background-color: var(--light-green-color);
+
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+
+  margin-left: 20px;
+  margin-bottom: 20px;
 }
 /* Скидки 50% end */
 
 /* Доставка start */
 .info-card-delivery {
   background-color: var(--light-sand-color);
+
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+
+  margin-left: 20px;
 }
 /* Доставка end */
 
@@ -840,10 +969,14 @@ img {
 
 .services-slider-inner {
   display: grid;
-  grid-template-columns: min-content 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr max-content;
 
   outline: 7px solid red; /* временно */
   outline-offset: -7px; /* временно */
+}
+
+.slider-nav {
+  border-right: 2px solid grey;
 }
 
 .services-header {
@@ -999,12 +1132,12 @@ img {
 
 .nav-master-footer {
   display: grid;
-  grid-template-columns:  max-content 1fr;
+  grid-template-columns: max-content 1fr;
 }
 
 .two-block-nav-master {
   display: grid;
-  grid-template-columns:  max-content 1fr;
+  grid-template-columns: max-content 1fr;
 
   outline: 7px solid darkgoldenrod; /* временно */
   outline-offset: -7px; /* временно */
@@ -1097,6 +1230,14 @@ img {
 .contacts-mail-site {
   outline: 9px solid brown; /* временно */
   outline-offset: -9px; /* временно */
+
+  display: flex;
+  align-items: center;
+}
+
+.feedback-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .two-block-basic {
@@ -1109,6 +1250,27 @@ img {
 
 .social-contacts-items {
   list-style: none;
+  display: flex;
+}
+
+.social-ico {
+  background-color: var(--social-ico-wet-asphalt-color);
+
+  border-radius: 50%;
+
+  color: white; /* если не прогрузится иконка */
+}
+
+.social-ico:hover {
+  background-color: var(--red-color);
+}
+
+.social-ico:active {
+  background-color: var(--red-color);
+}
+
+.developer-mail-link {
+  padding-right: 5px;
 }
 
 .developer-mail-link,
@@ -1256,4 +1418,48 @@ img {
 
 /*
   Каталог сайта end
+*/
+/* ---------------------- */
+/*
+  sticky footer start
+*/
+
+.sticky-footer-top {
+  width: 100%;
+  height: 1005;
+}
+
+@media screen and (max-width: 1199px) {
+  .sticky-footer-top {
+    width: 100%;
+    height: calc(123vh - 5px);
+  }
+}
+
+.sticky-footer-body {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.sticky-footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sticky-footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.sticky-footer-body {
+  position: relative;
+}
+
+/*
+  sticky footer end
 */
