@@ -80,8 +80,19 @@
   position: relative;
 }
 
-.visually-hidden {
-  display: none;
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .cursor-default:hover {
@@ -369,6 +380,9 @@ img {
   margin-top: 12px;
   margin-right: auto;
   margin-left: auto;
+
+  width: fit-content;
+  min-height: fit-content;
 
   position: relative;
   top: 8px;
@@ -1042,13 +1056,18 @@ img {
   max-width: 100%;
 
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
 
   /* outline: 5px solid brown; /* временно */
   /* outline-offset: -5px; /* временно */
 }
+
+.nav-items-no-crash {
+  min-height: 39px;
+}
+
 
 .nav-items-catalog {
   margin-top: -42px;
@@ -1535,7 +1554,7 @@ img {
   z-index: 1;
 }
 
-.item-product:hover .perforator-pic-fix-one {
+.item-product:hover .pic-opacity {
   opacity: 0;
 }
 
@@ -1902,8 +1921,6 @@ img {
 
 .product-button:hover,
 .product-button:hover:after {
-  cursor: pointer;
-
   background-color: var(--darker-red-color);
 }
 
@@ -2264,6 +2281,8 @@ img {
 }
 
 .services-slide-img {
+  width: auto;
+
   position: relative;
   top: 22px;
   right: 1px;
@@ -2392,7 +2411,7 @@ img {
 }
 
 .contacts-of-technomart-footer-secondary-one {
-  margin-top: 6px;
+  margin-top: 8px;
   margin-left: 0px;
 }
 
@@ -2546,7 +2565,7 @@ img {
 }
 
 .logo-master-header-footer {
-  padding-bottom: 3px;
+  padding-bottom: 0;
 
   width: 139px;
 }
@@ -2565,7 +2584,7 @@ img {
   padding-left: 172px;
 
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .nav-items-footer-one,
@@ -2584,6 +2603,29 @@ img {
   padding-right: 0;
   padding-bottom: 0;
   padding-right: 0;
+}
+
+.navigation-item-footer-main-one:nth-child(1) {
+  margin-left: -25px;
+}
+
+.navigation-item-footer-main-one:nth-child(2) {
+  padding-left: 9px;
+}
+
+.navigation-item-footer-main-one:nth-child(3) {
+  position: relative;
+  left: 7px;
+}
+
+.navigation-item-footer-main-one:nth-child(4) {
+  position: relative;
+  left: 18px;
+}
+
+.navigation-item-footer-main-one:nth-child(5) {
+  position: relative;
+  left: 27px;
 }
 
 .navigation-item-link-footer-main-one {
@@ -2629,7 +2671,7 @@ img {
   padding-left: 65px;
 
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .item-footer-secondary-one {
@@ -2637,6 +2679,26 @@ img {
   padding-right: 0;
   padding-bottom: 0;
   padding-right: 0;
+}
+
+.item-footer-secondary-one:nth-child(1) {
+  position: relative;
+  left: -12px;
+}
+
+.item-footer-secondary-one:nth-child(2) {
+  position: relative;
+  left: -5px;
+}
+
+.item-footer-secondary-one:nth-child(3) {
+  position: relative;
+  left: 0;
+}
+
+.item-footer-secondary-one:nth-child(4) {
+  position: relative;
+  left: 14px;
 }
 /* Первый блок подвала сайта end */
 
@@ -2706,6 +2768,7 @@ img {
 
 .contacts-mail-site {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 
@@ -2744,6 +2807,7 @@ img {
 
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
