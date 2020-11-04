@@ -15,13 +15,10 @@
 
 <body class="container-wrapper">
   <!-- Шапка сайта start -->
-  <header class="master-wrapper-head">
-    <h2 class="visually-hidden">
-      Шапка сайта
-    </h2>
+  <header class="master-wrapper-head" tabindex="0">
     <section class="head-inner">
       <h2 class="visually-hidden">
-        Шапка сайта
+        Шапка сайта.
       </h2>
       <div class="head-wrapper-left">
         <a class="logo-master logo-master-header"
@@ -38,6 +35,9 @@
           <form class="some-main-form"
                 action="https://echo.htmlacademy.ru"
                 method="post">
+                <h2 class="visually-hidden">
+                  Форма поиска
+                </h2>
             <button class="some-form-find-button"
                     type="submit">
               <svg class="some-form-find"
@@ -55,7 +55,8 @@
             </button>
             <input class="some-form-input"
                    type="search"
-                   placeholder="Поиск:">
+                   placeholder="Поиск:"
+                   aria-label="Введите запрос для поиска">
           </form>
           <!-- Форма поиска end -->
         </div>
@@ -73,12 +74,12 @@
                   d="M14 15C14 15.55 13.632 15.741 13.182 15.426L7.819 11.661C7.369 11.346 6.632 11.346 6.182 11.661L0.818 15.426C0.368 15.741 0 15.55 0 15V1C0 0.45 0.45 0 1 0H13C13.55 0 14 0.45 14 1V15Z"
                   fill="white" />
           </svg>
-          <p class="bookmarks bookmarks-number general-style-header">
-            Закладки: 0
-          </p>
-        </div>
-        <div class="basket-inner basket-inner-dots"
-             tabindex="0">
+            <p class="bookmarks bookmarks-number general-style-header">
+              Закладки: 0
+            </p>
+            <h3 class="visually-hidden">штук</h3>
+          </div>
+        <div class="basket-inner basket-inner-dots" tabindex="0">
           <svg class="basket-ico"
                width="15"
                height="11"
@@ -89,13 +90,18 @@
                   d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z"
                   fill="transparent" />
           </svg>
-          <p class="basket general-style-header">
-            Корзина: 0
-          </p>
+          <div>
+            <h3 class="visually-hidden">В корзине</h3>
+            <p class="basket general-style-header" aria-hidden="false">
+              <span aria-hidden="true">Корзина:</span> 0
+            </p>
+            <h3 class="visually-hidden">товаров</h3>
+          </div>
         </div>
         <button type="button"
-                class="order-registration">
-          Оформить заказ
+                class="order-registration"
+                aria-label="Кнопка оформления заказа">
+          <span aria-hidden="true">Оформить заказ</span>
         </button>
       </div>
     </section>
@@ -103,13 +109,19 @@
   <!-- Шапка сайта end -->
 
   <!-- Блок с навигацией и информацией для пользователя start -->
-  <div class="master-wrapper-info-and-nav">
+  <div class="master-wrapper-info-and-nav"
+       tabindex="0">
+    <h2 class="visually-hidden">
+      Навигационное меню со слоганом сайта, адресом и кнопками входа и регистрации на сайте
+    </h2>
     <!-- Информация для пользователя start -->
-    <section class="info-for-user-inner">
+    <section class="info-for-user-inner"
+             tabindex="0">
       <h2 class="visually-hidden">
-        Слоган, контакты и кнопки Вход и Регистрация
+       Слоган сайта
       </h2>
-      <p class="brief-description">
+      <p class="brief-description"
+         tabindex="0">
         Интернет-магазин<br>
         строительных материалов<br>
         и инструментов для ремонта
@@ -124,17 +136,20 @@
                  src="img/phone-ico.svg"
                  width="17"
                  height="18"
-                 alt="Иконка трубки телефона">
+                 alt="Иконка трубки телефона"
+                 aria-hidden="true">
             <a class="telephone-of-technomart"
-               href="tel:78125550555">+7 (812) 555-05-55</a>
+               aria-label="Позвонить по номеру телефона +7 (812) 555-05-55"
+               href="tel:78125550555"><span aria-hidden="true">+7 (812) 555-05-55</span></a>
           </div>
-          <p class="address-of-technomart">
-            г. Санкт-Петербург, <span>ул. Б. Конюшенная, д. 19/8</span>
+          <p class="address-of-technomart"
+             tabindex="0">
+            <span>г. Санкт-Петербург, <span class="address-of-technomart-span">ул. Б. Конюшенная, д. 19/8</span></span>
           </p>
         </address>
         <section class="login-and-register-inner">
           <h2 class="visually-hidden">
-            Войти на сайт или зарегистрироваться на нем
+            Войти на сайт или зарегистрироваться на сайте
           </h2>
           <div class="sign-in-btn">
             <a class="button-user button-user-sign-in"
@@ -143,14 +158,15 @@
                    src="img/sign-in-ico.svg"
                    width="19"
                    height="17"
-                   alt="Иконка кнопки Войти">
-              Войти
+                   alt="Кнопка Войти">
+              <span aria-hidden="true">Войти</span>
             </a>
           </div>
           <div class="register-btn">
             <a class="button-user button-user-register"
-               href="registration.html">
-              Регистрация
+               href="registration.html"
+               aria-label="Кнопка регистрации на сайте">
+              <span aria-hidden="true">Регистрация</span>
             </a>
           </div>
         </section>
@@ -271,6 +287,7 @@
             <!-- - -->
             <!-- Техника start -->
             <div class="info-card-wrapper info-card-technics">
+              <h3 class="visually-hidden">Техника</h3>
               <div class="info-card-inner">
                 <h3 class="info-card-header info-card-header-technics info-card-header-general-style">
                   Техника
@@ -290,7 +307,7 @@
           </div>
           <div class="info-blocks info-blocks-slide-blocks">
             <!-- Слайдер start -->
-            <div class="slider-perforators-wrapper slider-perforators">
+            <div class="slider-perforators-wrapper slider-perforators" tabindex="0">
               <!-- Слайд 1 start -->
               <div class="slider-info-blocks">
                 <section class="slide-wrapper">
@@ -303,18 +320,26 @@
                     </p>
                   </div>
                   <div class="slide-inner slide-arrows">
-                    <img class="arrow-left-ico"
-                         src="img/arrow-left.svg"
-                         width="21"
-                         height="39"
-                         alt="Иконка со стрелкой влево"
-                         tabindex="0">
-                    <img class="arrow-right-ico"
-                         src="img/arrow-right.svg"
-                         width="21"
-                         height="39"
-                         alt="Иконка со стрелкой вправо"
-                         tabindex="0">
+                    <button class="slider-button">
+                      <img class="arrow-left-ico"
+                      src="img/arrow-left.svg"
+                      width="21"
+                      height="39"
+                      alt="Стрелка влево">
+                      <span class="visually-hidden">
+                        Стрелка влево
+                      </span>
+                    </button>
+                    <button class="slider-button">
+                      <img class="arrow-right-ico"
+                      src="img/arrow-right.svg"
+                      width="21"
+                      height="39"
+                      alt="Стрелка вправо">
+                      <span class="visually-hidden">
+                        Стрелка вправо
+                      </span>
+                    </button>
                   </div>
                   <div class="slide-inner slide-buttons">
                     <a class="slide-link btn-nav"
@@ -807,11 +832,13 @@
             Вы можете забрать товар сами,<br>
             заехав в наш офис:
           </p>
-          <img class="map-pic"
-               src="img/map.jpg"
-               width="300"
-               height="158"
-               alt="Карта">
+          <a href="map.html">
+             <img class="map-pic"
+                  src="img/map.jpg"
+                  width="300"
+                  height="158"
+                  alt="Карта">
+          </a>
           <a class="contacts-btn btn-nav"
              href="feedback.html">
             Заблудились? НапиШИТЕ НАМ!
@@ -993,7 +1020,7 @@
 
         <section class="contacts-mail-site">
           <h2 class="visually-hidden">
-            Обратная связь с компанией-разработчиком
+            Почта и сайт разработчика
           </h2>
           <div class="feedback-container">
             <p class="feedback two-block-basic">
@@ -1057,23 +1084,38 @@
 
   <!-- Форма отправки письма end -->
 
-  <!-- Карта start -->
+  <!-- Как до нас добраться start -->
 
   <section class="map-popup map-popup-hidden">
     <h2 class="visually-hidden">
-      Карта
+      Как до нас добраться.
     </h2>
-    <img class=""
-         src="img/map-popup.jpg"
-         width="943"
-         height="440"
-         alt="Офис компании по адресу: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+    <!-- <img class=""
+              src="img/map-popup.jpg"
+              width="943"
+              height="440"
+              alt="Офис компании по адресу: город Санкт-Петербург, улица Большая Конюшенная, дом 19 дробь 8. Наш телефон: +7 (812) 555-05-55.">
+    <iframe src="https://yandex.ru/map-widget/v1/-/CCUAMBUvLD"
+            width="943"
+            height="440"
+            allowfullscreen title="Офис компании по адресу на карте Яндекс: город Санкт-Петербург, улица Большая Конюшенная, дом 19 дробь 8. Наш телефон: +7 (812) 555-05-55.">
+    </iframe>
+    <iframe src="https://static.maps.2gis.com/1.0?s=943x440&c=59.9385,30.31677&z=14&pt=59.93871,30.32297"
+            width="943"
+            height="440"
+            allowfullscreen title="Офис компании по адресу на карте 2ГИС: город Санкт-Петербург, улица Большая Конюшенная, дом 19 дробь 8. Наш телефон: +7 (812) 555-05-55.">
+    </iframe> -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003151!2d30.32085871621117!3d59.9387191690541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1604476721294!5m2!1sru!2sru"
+            width="943"
+            height="440"
+            allowfullscreen title="Офис компании по адресу на карте Google: город Санкт-Петербург, улица Большая Конюшенная, дом 19 дробь 8. Наш телефон: +7 (812) 555-05-55.">
+    </iframe>
     <div class="map-popup-close">
-      <button class="map-popup-close-btn" type="button" tabindex="0">Закрыть</button>
+      <button class="map-popup-close-btn" type="button" tabindex="0">Закрыть карту</button>
     </div>
   </section>
 
-  <!-- Карта end -->
+  <!-- Как до нас добраться end -->
 
   <script src="js/script.js"></script>
 
