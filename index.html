@@ -22,8 +22,7 @@
       </h2>
       <div class="head-wrapper-left">
         <a class="logo-master logo-master-header"
-           tabindex="0"
-           href="index.html">
+           tabindex="0">
           <img class="logo-master-header"
                src="img/technomart-logo.svg"
                width="108"
@@ -154,11 +153,20 @@
           <div class="sign-in-btn">
             <a class="button-user button-user-sign-in"
                href="blank.html">
-              <img class="sign-in-ico"
-                   src="img/sign-in-ico.svg"
-                   width="19"
-                   height="17"
-                   alt="Кнопка Войти">
+               <svg class="sign-in-ico"
+                    width="20"
+                    height="17"
+                    viewBox="0 0 20 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-label="Иконка кнопки Вход">
+                <path class="sign-in-ico-path-one"
+                      d="M14.1667 8.5L5.71429 0V6H0V11H5.71429V17L14.1667 8.5Z"
+                      fill="none"/>
+                <path class="sign-in-ico-path-two"
+                      d="M16.1771 15.01H11.3895V17H16.1771C18.2514 17 19.0381 15.19 19.0619 13.974V3.028C19.0381 1.811 18.2514 0 16.1771 0H11.3895V1.99H16.1771C16.9762 1.99 17.1219 2.671 17.1391 3.047V13.951C17.1229 14.327 16.9762 15.01 16.1771 15.01Z"
+                      fill="none"/>
+              </svg>
               <span aria-hidden="true">Войти</span>
             </a>
           </div>
@@ -430,7 +438,7 @@
         <ul class="product-items">
           <li class="item-product">
             <div class="item-flex">
-              <img class="perforator-pic perforator-pic-fix-one"
+              <img class="perforator-pic perforator-pic-fix-one pic-opacity"
                    src="img/bosh-bfg-9000.jpg"
                    width="164"
                    height="80"
@@ -448,6 +456,23 @@
                 25500 Р<span>.</span>
               </button>
             </div>
+            <!-- Скрытый слой, появляется при наведении на карточку товара start -->
+            <div class="item-product-hidden">
+              <button class="product-button-hover"
+                      type="button">
+                <img class="product-button-hover-ico"
+                      src="img/basket-catalog-hover-ico.svg"
+                      width="15"
+                      height="15"
+                      alt="Иконка для кнопки Купить">
+                <span>Купить</span>
+              </button>
+              <button class="product-button-boomarks"
+                      type="button">
+                В закладки
+              </button>
+            </div>
+            <!-- Скрытый слой, появляется при наведении на карточку товара end -->
           </li>
           <li class="item-product">
             <div class="item-flex perforator-pic-add">
@@ -456,7 +481,7 @@
                   New
                 </p>
               </div>
-              <img class="perforator-pic perforator-pic-3000-2000"
+              <img class="perforator-pic perforator-pic-3000-2000 pic-opacity"
                    src="img/bosh-bfg-3000.jpg"
                    width="127"
                    height="89"
@@ -469,11 +494,28 @@
                   22500 Р.
                 </s>
               </p>
-              <button  class="product-button product-button-fix-two"
+              <button  class="product-button product-button-fix-two.pic-opacity"
                        type="button">
                 15500 Р<span>.</span>
               </button>
             </div>
+            <!-- Скрытый слой, появляется при наведении на карточку товара start -->
+            <div class="item-product-hidden">
+              <button class="product-button-hover"
+                      type="button">
+                <img class="product-button-hover-ico"
+                      src="img/basket-catalog-hover-ico.svg"
+                      width="15"
+                      height="15"
+                      alt="Иконка для кнопки Купить">
+                <span>Купить</span>
+              </button>
+              <button class="product-button-boomarks"
+                      type="button">
+                В закладки
+              </button>
+            </div>
+            <!-- Скрытый слой, появляется при наведении на карточку товара end -->
           </li>
           <li class="item-product">
             <div class="item-flex">
@@ -495,6 +537,23 @@
                 25500 Р<span>.</span>
               </button>
             </div>
+            <!-- Скрытый слой, появляется при наведении на карточку товара start -->
+            <div class="item-product-hidden">
+              <button class="product-button-hover"
+                      type="button">
+                <img class="product-button-hover-ico"
+                      src="img/basket-catalog-hover-ico.svg"
+                      width="15"
+                      height="15"
+                      alt="Иконка для кнопки Купить">
+                <span>Купить</span>
+              </button>
+              <button class="product-button-boomarks"
+                      type="button">
+                В закладки
+              </button>
+            </div>
+            <!-- Скрытый слой, появляется при наведении на карточку товара end -->
           </li>
           <li class="item-product">
             <div class="info-card-new info-card-new-popular">
@@ -522,6 +581,23 @@
                 12500 Р<span>.</span>
               </button>
             </div>
+            <!-- Скрытый слой, появляется при наведении на карточку товара start -->
+            <div class="item-product-hidden">
+              <button class="product-button-hover"
+                      type="button">
+                <img class="product-button-hover-ico"
+                      src="img/basket-catalog-hover-ico.svg"
+                      width="15"
+                      height="15"
+                      alt="Иконка для кнопки Купить">
+                <span>Купить</span>
+              </button>
+              <button class="product-button-boomarks"
+                      type="button">
+                В закладки
+              </button>
+            </div>
+            <!-- Скрытый слой, появляется при наведении на карточку товара end -->
           </li>
         </ul>
       </section>
@@ -552,7 +628,8 @@
           <li class="item-manufacturer-inner"
               tabindex="0">
             <a class="item-manufacturer manufacturer-link"
-               href="#"
+               href="https://www.bosch-home.ru/"
+               target="_blank"
                tabindex="-1">
               <img class="manufacturer-pic"
                    src="img/bosh-logo.jpg"
@@ -564,7 +641,8 @@
           <li class="item-manufacturer-inner"
               tabindex="0">
             <a class="item-manufacturer manufacturer-link"
-               href="#"
+               href="https://makitarussia.ru/"
+               target="_blank"
                tabindex="-1">
               <img class="manufacturer-pic"
                    src="img/makita-logo.jpg"
@@ -576,7 +654,8 @@
           <li class="item-manufacturer-inner"
               tabindex="0">
             <a class="item-manufacturer manufacturer-link"
-               href="#"
+               href="http://www.dewalt.ru/"
+               target="_blank"
                tabindex="-1">
               <img class="manufacturer-pic"
                  src="img/dewalt-logo.jpg"
@@ -588,7 +667,8 @@
           <li class="item-manufacturer-inner"
               tabindex="0">
             <a class="item-manufacturer manufacturer-link"
-               href="#"
+               href="https://www.interskol.ru/"
+               target="_blank"
                tabindex="-1">
               <img class="manufacturer-pic"
                    src="img/interskol-logo.jpg"
@@ -600,7 +680,8 @@
           <li class="item-manufacturer-inner"
               tabindex="0">
             <a class="item-manufacturer manufacturer-link"
-               href="#"
+               href="http://www.hitachi.com/"
+               target="_blank"
                tabindex="-1">
               <img class="manufacturer-pic manufacturer-pic-fix"
                    src="img/hitachi-logo.jpg"
@@ -612,7 +693,8 @@
           <li class="item-manufacturer-inner"
               tabindex="0">
             <a class="item-manufacturer manufacturer-link"
-               href="#"
+               href="https://www.lg.com/"
+               target="_blank"
                tabindex="-1">
               <img class="manufacturer-pic"
                    src="img/lg-logo.jpg"
@@ -624,7 +706,8 @@
           <li class="item-manufacturer-inner"
               tabindex="0">
             <a class="item-manufacturer manufacturer-link"
-               href="#"
+               href="https://www.aegps.com/"
+               target="_blank"
                tabindex="-1">
               <img class="manufacturer-pic"
                    src="img/aeg-logo.jpg"
@@ -636,7 +719,8 @@
           <li class="item-manufacturer-inner"
               tabindex="0">
             <a class="item-manufacturer manufacturer-link"
-               href="#"
+               href="https://metabo.com"
+               target="_blank"
                tabindex="-1">
               <img class="manufacturer-pic"
                    src="img/metabo-logo.jpg"
@@ -817,10 +901,10 @@
                 </li>
               </ul>
             </div>
-            <button class="tc-btn btn-nav"
-                    type="button">
+            <a href="more-information-about-the-company.html"
+               class="tc-btn btn-nav">
               Подробнее о компании
-            </button>
+            </a>
           </div>
         </section>
 
@@ -864,8 +948,7 @@
               Контакты
             </h2>
             <a class="logo-master logo-master-footer"
-               href="index.html"
-              tabindex="0" >
+               tabindex="0" >
               <img class="logo-master-header logo-master-header-footer"
                    src="img/technomart-logo.svg"
                    width="108"
@@ -1090,26 +1173,31 @@
     <h2 class="visually-hidden">
       Как до нас добраться.
     </h2>
-    <!-- <img class=""
-              src="img/map-popup.jpg"
+      <!-- <img class=""
+                src="img/map-popup.jpg"
+                width="943"
+                height="440"
+                alt="Офис компании по адресу: город Санкт-Петербург, улица Большая Конюшенная, дом 19 дробь 8. Наш телефон: +7 (812) 555-05-55.">
+      <iframe src="https://yandex.ru/map-widget/v1/-/CCUAMBUvLD"
               width="943"
               height="440"
-              alt="Офис компании по адресу: город Санкт-Петербург, улица Большая Конюшенная, дом 19 дробь 8. Наш телефон: +7 (812) 555-05-55.">
-    <iframe src="https://yandex.ru/map-widget/v1/-/CCUAMBUvLD"
-            width="943"
-            height="440"
-            allowfullscreen title="Офис компании по адресу на карте Яндекс: город Санкт-Петербург, улица Большая Конюшенная, дом 19 дробь 8. Наш телефон: +7 (812) 555-05-55.">
-    </iframe>
-    <iframe src="https://static.maps.2gis.com/1.0?s=943x440&c=59.9385,30.31677&z=14&pt=59.93871,30.32297"
-            width="943"
-            height="440"
-            allowfullscreen title="Офис компании по адресу на карте 2ГИС: город Санкт-Петербург, улица Большая Конюшенная, дом 19 дробь 8. Наш телефон: +7 (812) 555-05-55.">
-    </iframe> -->
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003151!2d30.32085871621117!3d59.9387191690541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1604476721294!5m2!1sru!2sru"
-            width="943"
-            height="440"
-            allowfullscreen title="Офис компании по адресу на карте Google: город Санкт-Петербург, улица Большая Конюшенная, дом 19 дробь 8. Наш телефон: +7 (812) 555-05-55.">
-    </iframe>
+              allowfullscreen title="Офис компании по адресу на карте Яндекс: город Санкт-Петербург, улица Большая Конюшенная, дом 19 дробь 8. Наш телефон: +7 (812) 555-05-55.">
+      </iframe>
+      <iframe src="https://static.maps.2gis.com/1.0?s=943x440&c=59.9385,30.31677&z=14&pt=59.93871,30.32297"
+              width="943"
+              height="440"
+              allowfullscreen title="Офис компании по адресу на карте 2ГИС: город Санкт-Петербург, улица Большая Конюшенная, дом 19 дробь 8. Наш телефон: +7 (812) 555-05-55.">
+      </iframe>
+      <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=30.31937956809998%2C59.93737829990463%2C30.325977802276615%2C59.93971078123431&amp;layer=mapnik&amp;marker=59.938545326558575%2C30.322679683547335"
+              width="943"
+              height="440"
+              allowfullscreen title="Офис компании по адресу на карте Google: город Санкт-Петербург, улица Большая Конюшенная, дом 19 дробь 8. Наш телефон: +7 (812) 555-05-55.">
+      </iframe> -->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003151!2d30.32085871621117!3d59.9387191690541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1604476721294!5m2!1sru!2sru"
+              width="943"
+              height="440"
+              allowfullscreen title="Офис компании по адресу на карте OpenStreetMap: город Санкт-Петербург, улица Большая Конюшенная, дом 19 дробь 8. Наш телефон: +7 (812) 555-05-55.">
+      </iframe>
     <div class="map-popup-close">
       <button class="map-popup-close-btn" type="button" tabindex="0">Закрыть карту</button>
     </div>
