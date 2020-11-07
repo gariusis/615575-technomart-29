@@ -244,20 +244,20 @@
           Форма отправки письма
         </h2>
         <div class="email-sending-form-position">
-          <form class="email-sending-form-flex" action="/" method="post">
+          <form class="email-sending-form-main email-sending-form-flex" action="https://echo.htmlacademy.ru" method="post">
             <div class="email-sending-form-top-block">
               <p class="email-sending-form-txt">
                 <label class="email-sending-form-header" for="user-name">Ваше имя:</label>
-                <input class="email-sending-form-data email-sending-form-border email-sending-form-placeholder" id="user-name" type="text" name="writeusr" placeholder="Имя Фамилия" tabindex="0">
+                <input class="email-sending-form-data email-sending-form-border email-sending-form-placeholder email-sending-form-user-name" id="user-name" type="text" name="userName" placeholder="Имя Фамилия" tabindex="0" required>
               </p>
               <p class="email-sending-form-txt">
                 <label class="email-sending-form-header" for="user-e-mail">Ваш e-mail:</label>
-                <input class="email-sending-form-data email-sending-form-border email-sending-form-placeholder" id="user-e-mail" type="email" name="usremail" placeholder="email@example.com" tabindex="0">
+                <input class="email-sending-form-data email-sending-form-border email-sending-form-placeholder email-sending-form-validation" id="user-e-mail" type="email" name="userEmail" placeholder="email@example.com" tabindex="0">
               </p>
             </div>
             <p class="email-sending-form-txt email-sending-form-txt-fix">
               <label class="email-sending-form-header" for="user-text">Текст письма:</label>
-              <input class="email-sending-form-txt-e-mail email-sending-form-border email-sending-form-placeholder" id="user-text" type="text" name="usrtext" placeholder="В свободной форме" tabindex="0">
+              <input class="email-sending-form-txt-e-mail email-sending-form-border email-sending-form-placeholder" id="user-text" type="text" name="userText" placeholder="В свободной форме" tabindex="0">
             </p>
             <div class="email-sending-form-middle-block">
               <button class="email-sending-form-send-btn" id="button" type="submit" tabindex="0">Отправить</button>
